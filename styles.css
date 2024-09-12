@@ -94,6 +94,88 @@ section h2 {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
+/* Estilos generales para la sección de contacto y el mapa */
+.contact-section, .map-section {
+    font-family: 'Arial', sans-serif; /* Fuente estándar */
+    background-color: #f4f4f9; /* Color de fondo suave */
+    color: #333; /* Color de texto oscuro */
+    padding: 50px 0; /* Espaciado vertical para secciones */
+}
+
+/* Estilos para el formulario de contacto */
+.contact-form {
+    max-width: 600px; /* Anchura máxima del formulario */
+    margin: 0 auto; /* Centrar el formulario */
+    background-color: #fff; /* Fondo blanco */
+    padding: 30px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+/* Estilos para los grupos de entrada del formulario */
+.contact-input-group {
+    margin-bottom: 20px; /* Espacio entre los campos */
+}
+
+/* Estilos para las etiquetas (label) dentro del formulario */
+.contact-input-group label {
+    display: block; /* Ocupan toda la línea */
+    font-size: 1rem; /* Tamaño de fuente */
+    color: #333; /* Color de texto */
+    margin-bottom: 8px; /* Espacio entre el label y el campo */
+}
+
+/* Estilos para los campos de entrada de texto, área de texto y selección */
+.contact-input-group input, 
+.contact-input-group textarea, 
+.contact-input-group select {
+    width: 100%; /* Ocupan todo el ancho */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde gris claro */
+    font-size: 1rem; /* Tamaño de texto */
+}
+
+/* Estilos para el botón de enviar */
+.contact-button {
+    background-color: #d32f2f; /* Color de fondo rojo */
+    color: white; /* Texto blanco */
+    padding: 15px 20px; /* Espaciado interno */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* El cursor cambia a mano */
+    width: 100%; /* Botón ocupa todo el ancho */
+    font-size: 1rem; /* Tamaño de texto */
+    transition: background-color 0.3s ease; /* Animación suave al pasar el ratón */
+}
+
+/* Cambia el color de fondo del botón cuando se pasa el ratón por encima */
+.contact-button:hover {
+    background-color: #a82323; /* Rojo más oscuro */
+}
+
+/* Estilos para la sección del mapa */
+.map-section {
+    text-align: center; /* Centra el contenido */
+    max-width: 800px; /* Ancho máximo del contenedor del mapa */
+    margin: 50px auto; /* Margen vertical y centrado horizontal */
+}
+
+/* Estilos para el título de la sección del mapa */
+.map-heading {
+    font-size: 1.8rem; /* Tamaño de fuente grande */
+    color: #d32f2f; /* Color rojo del texto */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilos para el contenedor del mapa */
+.map-container {
+    height: 400px; /* Altura del mapa */
+    width: 100%; /* El mapa ocupa todo el ancho */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Sombra para el mapa */
+}
+
 
 /* Footer (pie de página) */
 footer {
