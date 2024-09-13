@@ -7,11 +7,6 @@ Este repositorio está dedicado al desarrollo de la plataforma de **Diva’s Fas
 ## 🛠️ Tecnologías Empleadas
 
 - **HTML5 / CSS3 / JavaScript**: Para una interfaz de usuario moderna y responsiva.
-- **React.js**: Framework para construir una experiencia de usuario dinámica e interactiva.
-- **Node.js & Express**: Backend eficiente para manejar las peticiones del servidor.
-- **MongoDB**: Base de datos no relacional para almacenar productos, usuarios y pedidos.
-- **Stripe**: Integración para pagos seguros en línea.
-
 ---
 
 ¡Gracias por tu interés en el desarrollo de Diva’s Fashion! 🎉
