@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Diva's Fashion</title>
+    <!-- Enlace al archivo CSS externo para los estilos -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Script para cargar Google Maps. Reemplazar "TU_CLAVE_API" con una clave válida -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmxic84enmCvvlK1v_tXmNVR0dzxK0bfQ"></script>
+</head>
+<body>
+
+    <!-- Sección que contiene el formulario de contacto -->
+    <section class="contact-section">
+        <form class="contact-form" action="#" method="post">
+            <!-- Grupo de entrada para el nombre del usuario -->
+            <div class="contact-input-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <!-- Grupo de entrada para el correo electrónico -->
+            <div class="contact-input-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <!-- Grupo de entrada para el teléfono (opcional) -->
+            <div class="contact-input-group">
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <!-- Desplegable para seleccionar el motivo del contacto -->
+            <div class="contact-input-group">
+                <label for="subject">Motivo de contacto:</label>
+                <select id="subject" name="subject">
+                    <option value="consulta">Consulta general</option>
+                    <option value="pedido">Información sobre un pedido</option>
+                    <option value="soporte">Soporte técnico</option>
+                    <option value="otros">Otros</option>
+                </select>
+            </div>
+            <!-- Área de texto para escribir el mensaje -->
+            <div class="contact-input-group">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <!-- Botón para enviar el formulario -->
+            <button class="contact-button" type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Sección donde se mostrará el mapa de Google Maps -->
+    <section class="map-section">
+        <h2 class="map-heading">Visítanos en nuestra tienda física</h2>
+        <!-- Div donde se renderiza el mapa -->
+        <div id="map" class="map-container"></div>
+    </section>
+
+    <!-- Script para inicializar Google Maps con las coordenadas especificadas -->
+    <script>
+        function initMap() {
+            var location = { lat: -12.0464, lng: -77.0428 }; // Coordenadas de ejemplo (Lima, Perú)
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+        // Inicializar el mapa cuando la página termine de cargar
+        window.onload = initMap;
+    </script>
+
+</body>
+</html>
