@@ -1,111 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- 
-    El elemento <head> contiene metadatos sobre el documento, como el título, la codificación de caracteres y enlaces a hojas de estilo.
-    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos - Tienda de Ropa Femenina</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- 
-    El elemento <header> define la cabecera del documento. Usualmente contiene el título o la información introductoria.
-    -->
     <header>
         <h1>Productos de la Tienda de Ropa Femenina</h1>
     </header>
 
-    <!-- 
-    El elemento <main> representa el contenido principal del documento. Debe ser único y contener el contenido central del documento.
-    -->
     <main>
-        <!-- 
-        La sección <section> agrupa un conjunto de contenido relacionado. En este caso, agrupa los productos por categoría.
-        -->
-        
-        <!-- Leggings Deportivos -->
-        <section id="leggings">
-            <h2>Leggings Deportivos</h2>
-            <div class="product-grid">
-                <!-- 
-                El elemento <article> representa un contenido independiente que podría ser distribuido de forma separada.
-                -->
-                <article class="product">
-                    <h3>Legging Deportivo Negro</h3>
-                    <img src="https://www.atmosmovement.com/dw/image/v2/BHFM_PRD/on/demandware.static/-/Sites-storefront_catalog_atmos/default/dwe7a96ee5/images/hi-res/Lookbok_Renombradas/Leggings-Para-Mujer-31230001-10_1.jpg?sw=700&sh=840" alt="Legging Deportivo 1">
-                    <p>S/109.99</p>
-                </article>
-                <article class="product">
-                    <h3>Legging Deportivo Azul</h3>
-                    <img src="https://i.pinimg.com/736x/ea/26/41/ea26411a0de9cf88931aa5f92eca716a.jpg" alt="Legging Deportivo 2">
-                    <p>S/119.99</p>
-                </article>
-                <!-- Agrega más productos aquí -->
-            </div>
-        </section>
+        <!-- Tabla de productos separados por tipo -->
+        <table border="1" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th colspan="3">Leggings Deportivos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <h3>Legging Deportivo Negro</h3>
+                        <img src="https://www.atmosmovement.com/dw/image/v2/BHFM_PRD/on/demandware.static/-/Sites-storefront_catalog_atmos/default/dwe7a96ee5/images/hi-res/Lookbok_Renombradas/Leggings-Para-Mujer-31230001-10_1.jpg?sw=700&sh=840" alt="Legging Deportivo Negro" width="200">
+                        <p>S/109.99</p>
+                    </td>
+                    <td>
+                        <h3>Legging Deportivo Azul</h3>
+                        <img src="https://i.pinimg.com/736x/ea/26/41/ea26411a0de9cf88931aa5f92eca716a.jpg" alt="Legging Deportivo Azul" width="200">
+                        <p>S/119.99</p>
+                    </td>
+                </tr>
+            </tbody>
 
-        <!-- Vestidos -->
-        <section id="vestidos">
-            <h2>Vestidos</h2>
-            <div class="product-grid">
-                <article class="product">
-                    <h3>Vestido Casual Floral</h3>
-                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/a7d50c99f6b89dc6a49d8881f3c425b3.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp" alt="Vestido 1">
-                    <p>S/199.99</p>
-                </article>
-                <article class="product">
-                    <h3>Vestido Rojo</h3>
-                    <img src="https://www.bellayvale.pe/wp-content/uploads/2022/07/07042022-DSC01463-Editar.jpg" alt="Vestido 2">
-                    <p>S/159.99</p>
-                </article>
-                <!-- Agrega más productos aquí -->
-            </div>
-        </section>
+            <thead>
+                <tr>
+                    <th colspan="3">Vestidos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <h3>Vestido Casual Floral</h3>
+                        <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/a7d50c99f6b89dc6a49d8881f3c425b3.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp" alt="Vestido Casual Floral" width="200">
+                        <p>S/99.99</p>
+                    </td>
+                    <td>
+                        <h3>Vestido Rojo</h3>
+                        <img src="https://www.bellayvale.pe/wp-content/uploads/2022/07/07042022-DSC01463-Editar.jpg" alt="Vestido Rojo" width="200">
+                        <p>S/149.99</p>
+                    </td>
+                </tr>
+            </tbody>
 
-        <!-- Polos Deportivos -->
-        <section id="polos">
-            <h2>Polos Deportivos</h2>
-            <div class="product-grid">
-                <article class="product">
-                    <h3>Polo Deportivo Negro</h3>
-                    <img src="https://www.alphafit.pe/cdn/shop/files/polo-oversize-mujer-ropa-deportiva-mujer-alphafit-peru-1-33267849068757.jpg?v=1697668011" alt="Polo Deportivo 1">
-                    <p>S/95.99</p>
-                </article>
-                <article class="product">
-                    <h3>Polo Deportivo Rosa</h3>
-                    <img src="https://plazavea.vteximg.com.br/arquivos/ids/28285804-300-300/imageUrl_1.jpg?v=638349681978400000" alt="Polo Deportivo 2">
-                    <p>S/99.99</p>
-                </article>
-                <!-- Agrega más productos aquí -->
-            </div>
-        </section>
+            <thead>
+                <tr>
+                    <th colspan="3">Polos Deportivos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <h3>Polo Deportivo Negro</h3>
+                        <img src="https://www.alphafit.pe/cdn/shop/files/polo-oversize-mujer-ropa-deportiva-mujer-alphafit-peru-1-33267849068757.jpg?v=1697668011" alt="Polo Deportivo Negro" width="200">
+                        <p>S/89.99</p>
+                    </td>
+                    <td>
+                        <h3>Polo Deportivo Rosa</h3>
+                        <img src="https://plazavea.vteximg.com.br/arquivos/ids/28285804-300-300/imageUrl_1.jpg?v=638349681978400000" alt="Polo Deportivo Rosa" width="200">
+                        <p>S/99.99</p>
+                    </td>
+                </tr>
+            </tbody>
 
-        <!-- Conjuntos de Polera y Buzo -->
-        <section id="conjuntos">
-            <h2>Conjuntos de Polera y Buzo</h2>
-            <div class="product-grid">
-                <article class="product">
-                    <h3>Conjunto Gris</h3>
-                    <img src="https://d3fvqmu2193zmz.cloudfront.net/ProductCatalog/Workspace.CWDQQL6GUIJMS/ProductCatalog.C3EYU7VPI5IIK/1500x1500/C3EZ2XTZUYNQU.jpg" alt="Conjunto 1">
-                    <p>S/249.99</p>
-                </article>
-                <article class="product">
-                    <h3>Conjunto Verde</h3>
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_870364-MLA69508203241_052023-O.webp" alt="Conjunto 2">
-                    <p>S/269.99</p>
-                </article>
-                <!-- Agrega más productos aquí -->
-            </div>
-        </section>
+            <thead>
+                <tr>
+                    <th colspan="3">Conjuntos de Polera y Buzo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <h3>Conjunto Gris</h3>
+                        <img src="https://d3fvqmu2193zmz.cloudfront.net/ProductCatalog/Workspace.CWDQQL6GUIJMS/ProductCatalog.C3EYU7VPI5IIK/1500x1500/C3EZ2XTZUYNQU.jpg" alt="Conjunto Gris" width="200">
+                        <p>S/229.99</p>
+                    </td>
+                    <td>
+                        <h3>Conjunto Verde</h3>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_870364-MLA69508203241_052023-O.webp" alt="Conjunto Verde" width="200">
+                        <p>S/249.99</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </main>
 
-    <!-- 
-    El elemento <footer> define la parte inferior del documento, generalmente incluye información de contacto o derechos de autor.
-    -->
     <footer>
-        
     </footer>
 </body>
 </html>
