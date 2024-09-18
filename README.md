@@ -1,4 +1,4 @@
-# 🎀 Diva’s Fashion: Empowering Women Through Style 🎀
+# 🎀 Ladies’s Fashion: Empowering Women Through Style 🎀
 
 ## 📋 Objetivo del Repositorio
 
