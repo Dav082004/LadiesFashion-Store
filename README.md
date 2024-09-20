@@ -12,6 +12,9 @@ Este repositorio está dedicado al desarrollo de la plataforma de **Diva’s Fas
 - **MongoDB**: Base de datos no relacional para almacenar productos, usuarios y pedidos.
 - **Stripe**: Integración para pagos seguros en línea.
 
+
+## 🛠️ Tecnologías Empleadas
+- **LINK**: https://dav082004.github.io/LadiesFashion-Store/ 
 ---
 
 ¡Gracias por tu interés en el desarrollo de Diva’s Fashion! 🎉
