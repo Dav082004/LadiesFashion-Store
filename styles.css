@@ -27,7 +27,6 @@ body {
     font-size: 2.5rem;
 }
 
-/* Sección de productos */
 .main {
     margin: 0 auto;
     max-width: 1200px; /* Ancho máximo para centrar el contenido */
@@ -81,8 +80,9 @@ body {
 
 .product-item h3 {
     font-size: 1.5rem;
-    color: black;
-    margin: 15px 0 10px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center; /* Centrar título */
 }
 
 .product-item p {
@@ -93,6 +93,8 @@ body {
     border-radius: 10px; /* Bordes redondeados */
     display: inline-block; /* Para que el bloque no ocupe el ancho completo */
     transition: transform 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .product-item p:hover {
@@ -357,24 +359,37 @@ body{
     margin-bottom: 35px;
 }
 
+/* Sección de productos usando Grid */
 .ropa-group{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Distribuye en columnas responsivas */
+    grid-gap: 20px; /* Espacio entre los elementos */ 
     margin-bottom: 50px;
 }
 
+/* Flexbox para los detalles dentro de cada producto */
 .ropa-1{
-    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .ropa-1 img{
-    width: 200px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .ropa-1 h3 {
-    color:#323337;
-    font-size: 20px;
-    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 /* Estilos para el encabezado */
@@ -423,19 +438,21 @@ body{
 }
 
 /* Estilos para el pie de página */
+/* Footer */
 .footer {
     background-color: black; /* Fondo oscuro */
     padding: 40px;
-    color: #f5f5f5; /* Texto claro */
+    color: #fff; /* Texto claro */
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: space-around;
     flex-wrap: wrap; /* Permite que las secciones se acomoden en pantallas pequeñas */
 }
 
 .footer-section {
-    flex: 1 1 200px; /* Cada sección ocupa espacio de manera flexible */
+    flex: 1;
+    min-width: 250px; /* Para que las secciones no sean demasiados pequeñas */
     margin: 10px;
+    text-align: center;
 }
 
 .footer-title {
@@ -466,15 +483,16 @@ body{
     color: #ff4081; /* Cambia de color al pasar el ratón */
 }
 
+/* Responsividad */
 @media (max-width: 768px) {
-    .footer {
-        flex-direction: column;
-        align-items: center;
+    .ropa-group {
+        grid-template-columns: 1fr; /* En pantallas pequeñas, mostrar una columna */
     }
 
-    .footer-section {
-        text-align: center;
+    .footer {
+        flex-direction: column;
     }
+
 }
 
 /* Asegúrate de que el html y el body ocupen el 100% de la altura del viewport */
