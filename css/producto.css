@@ -6,7 +6,7 @@
 }
 
 .table-header {
-    background-color: #ff6699; /* Rosado fuerte pastel */
+    background-color: #BFD8D2; /* Rosado fuerte pastel */
 }
 
 .category-title {
@@ -16,15 +16,23 @@
 }
 
 .product-category {
-    border-top: 2px solid #ff6699;
+    border-top: 2px solid #f5f5f5;
 }
 
 .product-row {
     text-align: center;
 }
 
+.h1-productos {
+    text-align: center; /* Centra el texto */
+    font-size: 30px; /* Puedes ajustar el tamaño de la fuente aquí */
+    font-weight: bold; /* Estilo opcional */
+    padding: 10px 0; /* Espaciado alrededor del encabezado */
+}
+
+
 .product-item {
-    background-color: #fff0f5; /* Fondo pastel suave */
+    background-color: #E9F1FA; /* Fondo pastel suave */
     padding: 15px;
     border-radius: 15px;
     text-align: center;
@@ -52,7 +60,7 @@
 }
 
 .product-item p {
-    background-color: #ff6699; /* Color de fondo para el bloque del precio */
+    background-color: #000000; /* Color de fondo para el bloque del precio */
     color: #fff; /* Color del texto del precio */
     font-size: 1.2rem;
     padding: 10px 15px; /* Añade padding para hacer que parezca un bloque */
@@ -64,27 +72,8 @@
 }
 
 .product-item p:hover {
-    background-color: #ff6699; /* Cambia el color de fondo al pasar el mouse */
+    background-color: #BFD8D2; /* Cambia el color de fondo al pasar el mouse */
     transform: scale(1.1); /* Aumenta el tamaño del bloque de precio */
-}
-
-/* Títulos de productos */
-.product-name {
-    font-size: 1.5rem;
-    color: #ff99cc; /* Otro tono pastel rosado */
-    margin: 15px 0 10px;
-}
-
-/* Precios */
-.product-price {
-    background-color: #E1E2E6; /* Color de fondo del bloque */
-    color: #fff; /* Color del texto */
-    font-size: 1.2rem; /* Tamaño de la fuente */
-    padding: 10px 15px; /* Espaciado alrededor del texto */
-    border-radius: 10px; /* Bordes redondeados */
-    display: inline-block; /* Para que el precio no ocupe todo el ancho */
-    margin-top: 10px;
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Transición suave */
 }
 
 /* Animación al pasar el mouse por encima del precio */
