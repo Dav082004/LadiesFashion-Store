@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/boutique.ico">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/descrip_pro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="header-title"><a href="/">Ladies Fashion</a></h1>
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><b>Inicio</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html"><b>Productos</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html"><b>Contacto</b></a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <div class="product-container">  
+            <div class="name-product">
+                Legging Deportivo Gym
+            </div>  
+            <div class="container-img">
+                <img src="https://i.pinimg.com/736x/ea/26/41/ea26411a0de9cf88931aa5f92eca716a.jpg" alt="Legging Deportivo Gym"/>
+            </div>
+        </div> 
+        <div class="container-info-product">
+            <div class="container-price">
+                <span><b>S/119.99</b></span>
+            </div>
+            <div class="container-details-product">
+                <div class="form-group">
+                    <label for="colour">Color</label>
+                    <select name="colour" id="colour">
+                        <option disabled selected value="">
+                            Escoge una opcion
+                        </option>
+                        <option value="rojo">Rojo</option>
+                        <option value="blanco">Blanco</option>
+                        <option value="beige">Beige</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="size">Talla</label>
+                    <select name="size" id="size">
+                        <option disabled selected value="">
+                            Escoge una opcion
+                        </option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                </div>
+                <button class="btn-clean">Limpiar</button>
+            </div>
+
+            <div class="container-add-cart">
+                <div class="container-quantity">
+                    <input 
+                        type="number" 
+                        placeholder="1" 
+                        value="1" 
+                        min="1" 
+                        max="10" 
+                        class="input-quantity"
+                    />
+                    <div class="btn-increment-decrement">
+                        <i class="fa-solid fa-chevron-up"></i>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        
+                    </div>
+                </div>
+                <button class="btn-add-to-cart">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Añadir al carrito
+                </button>
+            </div>
+            <div class="container-description">
+                <div class="title-description">
+                    <h4>Descripción</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="text-description">
+                    <p>Lorem</p>
+                </div>
+            </div>
+            <div class="container-additional-information">
+                <div class="title-additional-information">
+                    <h4>Información adicional</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="text-additional-information">
+                    <p>--------------------</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-section">
+            <h3 class="footer-title">Contacto</h3>
+            <ul class="footer-list">
+                <li class="footer-item"><a class="footer-link" href="mailto:contacto@divasfashion.com">Email: contacto@divasfashion.com</a></li>
+                <li class="footer-item"><a class="footer-link" href="tel:+123456789">Teléfono: 992854825</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3 class="footer-title">Síguenos</h3>
+            <ul class="footer-list">
+                <li class="footer-item"><a class="footer-link" href="https://www.facebook.com/divasfashion" target="_blank">Facebook</a></li>
+                <li class="footer-item"><a class="footer-link" href="https://www.instagram.com/divasfashion" target="_blank">Instagram</a></li>
+                <li class="footer-item"><a class="footer-link" href="https://www.twitter.com/divasfashion" target="_blank">Twitter</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3 class="footer-title">Legal</h3>
+            <ul class="footer-list">
+                <li class="footer-item"><a class="footer-link" href="terminos.html">Términos y Condiciones</a></li>
+                <li class="footer-item"><a class="footer-link" href="privacidad.html">Política de Privacidad</a></li>
+            </ul>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
