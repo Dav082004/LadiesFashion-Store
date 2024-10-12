@@ -1,0 +1,82 @@
+/* Estilo para títulos y texto en general */
+.h1-contact {
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+    
+}
+
+/* Contact and map sections */
+.contact-section, .map-section {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 50px 0;
+}
+
+/* Contact form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-input-group {
+    margin-bottom: 20px;
+}
+
+.contact-input-group label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.contact-input-group input,
+.contact-input-group textarea,
+.contact-input-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.contact-button {
+    background-color: #d32f2f;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #a82323;
+}
+
+/* Map section */
+.map-section {
+    text-align: center;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.map-heading {
+    font-size: 1.8rem;
+    color: #d32f2f;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}

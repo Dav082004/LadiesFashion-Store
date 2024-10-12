@@ -1,0 +1,89 @@
+/* Tabla de productos */
+.product-table {
+    margin: 20px auto;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+.table-header {
+    background-color: #BFD8D2; /* Rosado fuerte pastel */
+}
+
+.category-title {
+    color: black;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.product-category {
+    border-top: 2px solid #f5f5f5;
+}
+
+.product-row {
+    text-align: center;
+}
+
+.h1-productos {
+    text-align: center; /* Centra el texto */
+    font-size: 30px; /* Puedes ajustar el tamaño de la fuente aquí */
+    font-weight: bold; /* Estilo opcional */
+    padding: 10px 0; /* Espaciado alrededor del encabezado */
+}
+
+
+.product-item {
+    background-color: #E9F1FA; /* Fondo pastel suave */
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 48%; /* El bloque ocupa el 48% del espacio asignado para que las dos imágenes tengan el mismo tamaño */
+    max-width: 300px; /* Ancho máximo para que no se extienda demasiado */
+    margin: auto; /* Centra los elementos */
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center; /* Centrar título */
+}
+
+.product-item p {
+    background-color: #000000; /* Color de fondo para el bloque del precio */
+    color: #fff; /* Color del texto del precio */
+    font-size: 1.2rem;
+    padding: 10px 15px; /* Añade padding para hacer que parezca un bloque */
+    border-radius: 10px; /* Bordes redondeados */
+    display: inline-block; /* Para que el bloque no ocupe el ancho completo */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.product-item p:hover {
+    background-color: #BFD8D2; /* Cambia el color de fondo al pasar el mouse */
+    transform: scale(1.1); /* Aumenta el tamaño del bloque de precio */
+}
+
+/* Animación al pasar el mouse por encima del precio */
+.product-price:hover {
+    background-color: #E1E2E6; /* Cambia el color de fondo */
+    transform: scale(1.1); /* Aumenta el tamaño del bloque ligeramente */
+}
+
+/* Estilo de las imágenes */
+img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

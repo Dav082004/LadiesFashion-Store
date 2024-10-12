@@ -1,0 +1,136 @@
+.ropa{
+    
+    background-color: #E1E2E6;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.ropa-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ropa-content h2{
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 12;
+    margin: 0 auto;
+}
+
+/* Flexbox para los detalles dentro de cada producto */
+.ropa-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.ropa-1 img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.ropa-1 h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+.btn-1{
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #f3f3f3;
+    color:#323337;
+    text-transform: uppercase;
+}
+
+.btn-1:hover{
+    background-color: #BFD8D2;
+}
+
+.general-1, .general-2 {
+    flex-basis: 50%;
+    margin: 20px;
+}
+
+.general-1 p, .general-2 p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+  /* Style the mission and vision headings */
+.h2-mision, .h2-vision {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.general {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.general-1 {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.general-2 {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.general-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.general-side {
+    flex-basis: 45%;
+    margin: 20px;
+}
+
+.ropa-group{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Distribuye en columnas responsivas */
+    grid-gap: 20px; /* Espacio entre los elementos */ 
+    margin-bottom: 50px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .ropa-group {
+        grid-template-columns: 1fr; /* En pantallas pequeñas, mostrar una columna */
+    }
+    .footer {
+        flex-direction: column;
+    }
+}
+
+.txt-p{
+    font-size: 16px;
+    color: #414247;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
