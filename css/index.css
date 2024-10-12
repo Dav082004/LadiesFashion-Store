@@ -62,6 +62,7 @@
 }
 
 .general-1, .general-2 {
+    font-family: 'Poppins', sans-serif;
     flex-basis: 50%;
     margin: 20px;
 }
