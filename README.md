@@ -7,11 +7,11 @@ Este repositorio está dedicado al desarrollo de la plataforma de **Ladies Fashi
 ## 🛠️ Tecnologías Empleadas
 
 - **HTML5 / CSS3 / JavaScript**: Para una interfaz de usuario moderna y responsiva.
-- **React.js**: Framework para construir una experiencia de usuario dinámica e interactiva.
-- **Node.js & Express**: Backend eficiente para manejar las peticiones del servidor.
-- **MongoDB**: Base de datos no relacional para almacenar productos, usuarios y pedidos.
-- **Stripe**: Integración para pagos seguros en línea.
+
+## 🛠️ Parametros
+-**Tipo de letra**: Poppins
+-**Color para accionables**: #1bbeb4
 
 ---
 
-¡Gracias por tu interés en el desarrollo de Diva’s Fashion! 🎉
+¡Gracias por tu interés en el desarrollo de Ladies Fashion! 🎉
