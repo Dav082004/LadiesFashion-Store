@@ -17,7 +17,7 @@
 }
 
 .terms-box h3 {
-    color: #e91e63;
+    color: #1bbeb4;
     margin-top: 25px;
     margin-bottom: 10px;
 }
@@ -28,11 +28,13 @@
     background-color: #f0f0f0; /* Color de fondo del cuadro del gráfico */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+
 }
 
 .grafico-seccion h3 {
-    color: #e91e63;
-    margin-bottom: 20px;
+    color: #333;
+    margin-bottom: 40px;
 }
 
 /* Cuadro del Gráfico */
@@ -60,7 +62,7 @@
 }
 
 .grafico-box .bar:hover {
-    fill: #ff4081;
+    fill: #1bbeb4;
     transform: scaleY(1.05);
 }
 
