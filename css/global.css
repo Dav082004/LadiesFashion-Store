@@ -19,6 +19,7 @@
 }
 
 .header-title {
+    font-family: 'Arial', sans-serif;
     font-size: 28px;
     font-weight: bold;
     color: #333333;
@@ -49,11 +50,12 @@
     text-decoration: none;
     font-size: 18px;
     color: #333333;
+    font-family: 'Arial', sans-serif;
     transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-    color: #1bbeb4;
+    color: #BFD8D2;
 }
 
 .footer {

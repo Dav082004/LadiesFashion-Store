@@ -1,0 +1,125 @@
+/* Estilos específicos para la página de Términos y Condiciones */
+
+/* Cuadro de Términos y Condiciones */
+.terms-box {
+    background-color: #f0f0f0; /* Color de fondo del cuadro */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.terms-box p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.terms-box h3 {
+    color: #e91e63;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* Sección del Gráfico */
+.grafico-seccion {
+    padding: 20px;
+    background-color: #f0f0f0; /* Color de fondo del cuadro del gráfico */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grafico-seccion h3 {
+    color: #e91e63;
+    margin-bottom: 20px;
+}
+
+/* Cuadro del Gráfico */
+.grafico-box {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+    padding: 15px;
+    background-color: #ffffff; /* Fondo blanco para el gráfico */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el gráfico SVG */
+.grafico-box svg {
+    width: 100%;
+    height: auto;
+}
+
+/* Barras del gráfico */
+.grafico-box .bar {
+    fill: #0c21e0;
+    transition: fill 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.grafico-box .bar:hover {
+    fill: #ff4081;
+    transform: scaleY(1.05);
+}
+
+/* Etiquetas de las barras */
+.grafico-box .bar-label {
+    font-size: 5px;
+    text-anchor: middle;
+    fill: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .terms-box, .grafico-seccion {
+        padding: 15px;
+    }
+
+    .terms-box p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .grafico-seccion h3 {
+        font-size: 18px;
+    }
+
+    .grafico-box .bar-label {
+        font-size: 3px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 24px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .grafico-box {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .terms-box {
+        padding: 20px;
+    }
+
+    .grafico-seccion h3 {
+        font-size: 16px;
+    }
+
+    .grafico-box .bar-label {
+        font-size: 1px;
+    }
+}
