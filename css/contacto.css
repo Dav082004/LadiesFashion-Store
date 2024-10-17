@@ -1,82 +1,81 @@
 /* Estilo para títulos y texto en general */
 .h1-contact {
-    text-align: center;
-    color: black;
-    margin-top: 20px;
-    
+    text-align: center; /* Alinear el texto al centro */
+    color: black; /* Color del texto en negro */
+    margin-top: 20px; /* Espacio superior de 20px */
 }
 
-/* Contact and map sections */
+/* Secciones de contacto y mapa */
 .contact-section, .map-section {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    padding: 50px 0;
+    font-family: 'Arial', sans-serif; /* Fuente utilizada */
+    background-color: #f4f4f9; /* Color de fondo */
+    color: #333; /* Color del texto */
+    padding: 50px 0; /* Espaciado vertical de 50px */
 }
 
-/* Contact form */
+/* Formulario de contacto */
 .contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar el formulario */
+    background-color: #fff; /* Fondo blanco */
+    padding: 30px; /* Espaciado interno de 30px */
+    border-radius: 10px; /* Bordes redondeados de 10px */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
 }
 
 .contact-input-group {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Espacio inferior de 20px entre campos */
 }
 
 .contact-input-group label {
-    display: block;
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 8px;
+    display: block; /* Mostrar el label como bloque */
+    font-size: 1rem; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+    margin-bottom: 8px; /* Espacio inferior de 8px */
 }
 
 .contact-input-group input,
 .contact-input-group textarea,
 .contact-input-group select {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
+    width: 100%; /* Ancho completo del elemento */
+    padding: 10px; /* Espaciado interno de 10px */
+    border-radius: 5px; /* Bordes redondeados de 5px */
+    border: 1px solid #ccc; /* Borde gris claro */
+    font-size: 1rem; /* Tamaño de fuente */
 }
 
 .contact-button {
-    background-color: #d32f2f;
-    color: white;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
+    background-color: #d32f2f; /* Color de fondo rojo */
+    color: white; /* Color del texto en blanco */
+    padding: 15px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados de 5px */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+    width: 100%; /* Botón con ancho completo */
+    font-size: 1rem; /* Tamaño de fuente */
+    transition: background-color 0.3s ease; /* Transición de color suave */
 }
 
 .contact-button:hover {
-    background-color: #a82323;
+    background-color: #a82323; /* Color de fondo al hacer hover */
 }
 
-/* Map section */
+/* Sección del mapa */
 .map-section {
-    text-align: center;
-    max-width: 800px;
-    margin: 50px auto;
+    text-align: center; /* Alinear el texto al centro */
+    max-width: 800px; /* Ancho máximo de la sección */
+    margin: 50px auto; /* Espaciado y centrado automático */
 }
 
 .map-heading {
-    font-size: 1.8rem;
-    color: #d32f2f;
-    margin-bottom: 20px;
+    font-size: 1.8rem; /* Tamaño de fuente */
+    color: #d32f2f; /* Color del texto en rojo */
+    margin-bottom: 20px; /* Espacio inferior de 20px */
 }
 
 .map-container {
-    height: 400px;
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    height: 400px; /* Altura del contenedor del mapa */
+    width: 100%; /* Ancho completo */
+    border-radius: 10px; /* Bordes redondeados de 10px */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
 }

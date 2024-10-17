@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Configuración de metadatos básicos -->
     <meta charset="UTF-8">  
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon de la página -->
     <link rel="icon" href="images/boutique.ico">
+    
+    <!-- Enlaces a las hojas de estilo globales y específicas -->
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/descrip_pro.css">
+    
+    <!-- Enlace a la librería de iconos Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Fuentes de Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Título de la pestaña -->
     <title>Document</title>
 </head>
 <body>
     <div class="wrapper">
+        <!-- Encabezado de la página -->
         <header class="header">
+            <!-- Título del sitio con enlace a la página de inicio -->
             <h1 class="header-title"><a href="/">Ladies Fashion</a></h1>
+            
+            <!-- Menú de navegación -->
             <nav class="header-nav">
                 <ul class="nav-list">
                     <li class="nav-item"><a class="nav-link" href="index.html"><b>Inicio</b></a></li>
@@ -24,26 +39,35 @@
             </nav>
         </header>
     </div>
+
     <main>
+        <!-- Contenedor principal del producto -->
         <div class="product-container">  
+            <!-- Nombre del producto -->
             <div class="name-product">
-                    Legging Deportivo Running
+                Legging Deportivo Running
             </div>  
+            
+            <!-- Imagen del producto -->
             <div class="container-img">
                 <img src="https://www.atmosmovement.com/dw/image/v2/BHFM_PRD/on/demandware.static/-/Sites-storefront_catalog_atmos/default/dwe7a96ee5/images/hi-res/Lookbok_Renombradas/Leggings-Para-Mujer-31230001-10_1.jpg?sw=700&sh=840" alt="Legging Deportivo Negro"/>
-                
             </div>
-        </div> 
+        </div>
+
+        <!-- Información del producto -->
         <div class="container-info-product">
+            <!-- Precio del producto -->
             <div class="container-price">
                 <span><b>S/109.99</b></span>
             </div>
+            
+            <!-- Opciones de color y talla del producto -->
             <div class="container-details-product">
                 <div class="form-group">
                     <label for="colour">Color</label>
                     <select name="colour" id="colour">
                         <option disabled selected value="">
-                            Escoge una opcion
+                            Escoge una opción
                         </option>
                         <option value="rojo">Rojo</option>
                         <option value="blanco">Blanco</option>
@@ -54,7 +78,7 @@
                     <label for="size">Talla</label>
                     <select name="size" id="size">
                         <option disabled selected value="">
-                            Escoge una opcion
+                            Escoge una opción
                         </option>
                         <option value="S">S</option>
                         <option value="M">M</option>
@@ -62,10 +86,13 @@
                         <option value="XL">XL</option>
                     </select>
                 </div>
+                <!-- Botón para limpiar la selección -->
                 <button class="btn-clean">Limpiar</button>
             </div>
 
+            <!-- Sección para añadir al carrito -->
             <div class="container-add-cart">
+                <!-- Cantidad de productos a añadir -->
                 <div class="container-quantity">
                     <input 
                         type="number" 
@@ -76,16 +103,19 @@
                         class="input-quantity"
                     />
                     <div class="btn-increment-decrement">
+                        <!-- Botones de incremento/decremento de cantidad -->
                         <i class="fa-solid fa-chevron-up"></i>
                         <i class="fa-solid fa-chevron-down"></i>
-                        
                     </div>
                 </div>
+                <!-- Botón para añadir el producto al carrito -->
                 <button class="btn-add-to-cart">
                     <i class="fa-solid fa-cart-plus"></i>
                     Añadir al carrito
                 </button>
             </div>
+
+            <!-- Descripción del producto -->
             <div class="container-description">
                 <div class="title-description">
                     <h4>Descripción</h4>
@@ -95,6 +125,8 @@
                     <p>Lorem</p>
                 </div>
             </div>
+
+            <!-- Información adicional del producto -->
             <div class="container-additional-information">
                 <div class="title-additional-information">
                     <h4>Información adicional</h4>
@@ -106,6 +138,8 @@
             </div>
         </div>
     </main>
+
+    <!-- Pie de página con información de contacto, redes sociales y enlaces legales -->
     <footer class="footer">
         <div class="footer-section">
             <h3 class="footer-title">Contacto</h3>

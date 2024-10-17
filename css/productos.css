@@ -1,93 +1,91 @@
-
 /* Tabla de productos */
 .product-table {
-    margin: 20px auto;
-    width: 80%;
-    border-collapse: collapse;
+    margin: 20px auto; /* Centra la tabla horizontalmente */
+    width: 80%; /* La tabla ocupa el 80% del ancho de la página */
+    border-collapse: collapse; /* Elimina los espacios entre las celdas */
 }
 
 .table-header {
-    background-color: #BFD8D2; /* Rosado fuerte pastel */
+    background-color: #BFD8D2; /* Color de fondo para el encabezado de la tabla, rosado fuerte pastel */
 }
 
 .category-title {
-    color: black;
-    font-size: 1.5rem;
-    padding: 5px;
+    color: black; /* Color del texto para los títulos de categoría */
+    font-size: 1.5rem; /* Tamaño de fuente para los títulos */
+    padding: 5px; /* Espacio interno para los títulos */
 }
 
 .product-category {
-    border-top: 2px solid #f5f5f5;
+    border-top: 2px solid #f5f5f5; /* Borde superior para separar las categorías de productos */
 }
 
 .product-row {
-    text-align: center;
+    text-align: center; /* Centra el contenido de las filas de productos */
 }
 
 .h1-productos {
-    text-align: center; /* Centra el texto */
-    font-size: 30px; /* Puedes ajustar el tamaño de la fuente aquí */
-    font-weight: bold; /* Estilo opcional */
+    text-align: center; /* Centra el encabezado */
+    font-size: 30px; /* Ajusta el tamaño del encabezado */
+    font-weight: bold; /* Aplica negrita */
     padding: 10px 0; /* Espaciado alrededor del encabezado */
 }
 
-
 .product-item {
-    background-color: #E9F1FA; /* Fondo pastel suave */
-    padding: 15px;
-    border-radius: 15px;
-    text-align: center;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 48%; /* El bloque ocupa el 48% del espacio asignado para que las dos imágenes tengan el mismo tamaño */
-    max-width: 300px; /* Ancho máximo para que no se extienda demasiado */
-    margin: auto; /* Centra los elementos */
+    background-color: #E9F1FA; /* Fondo pastel suave para cada producto */
+    padding: 15px; /* Espaciado interno en el contenedor del producto */
+    border-radius: 15px; /* Bordes redondeados */
+    text-align: center; /* Centra el contenido del producto */
+    transition: transform 0.3s ease; /* Transición suave al aplicar hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra alrededor del producto */
+    width: 48%; /* Cada producto ocupa el 48% del ancho disponible */
+    max-width: 300px; /* Ancho máximo para limitar el tamaño */
+    margin: auto; /* Centra el producto dentro del contenedor */
 }
 
 .product-item:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el mouse */
 }
 
 .product-item img {
-    max-width: 100%;
-    border-radius: 10px;
+    max-width: 100%; /* Asegura que la imagen no exceda el tamaño del contenedor */
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
 }
 
 .product-item h3 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 5px;
-    text-align: center; /* Centrar título */
-    margin-top: 0px;
+    font-size: 1.5rem; /* Tamaño de fuente para el título del producto */
+    color: #333; /* Color del texto del título */
+    margin-bottom: 5px; /* Espaciado debajo del título */
+    text-align: center; /* Centra el texto del título */
+    margin-top: 0px; /* Elimina el margen superior */
 }
 
 .product-item p {
-    background-color: #000000; /* Color de fondo para el bloque del precio */
-    color: #fff; /* Color del texto del precio */
-    font-size: 1.2rem;
-    padding: 10px 15px; /* Añade padding para hacer que parezca un bloque */
-    border-radius: 10px; /* Bordes redondeados */
-    display: inline-block; /* Para que el bloque no ocupe el ancho completo */
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    text-align: center;
-    margin-top: 10px;
+    background-color: #000000; /* Fondo negro para el bloque de precio */
+    color: #fff; /* Texto blanco para el precio */
+    font-size: 1.2rem; /* Tamaño de fuente para el precio */
+    padding: 10px 15px; /* Espaciado interno para el bloque del precio */
+    border-radius: 10px; /* Bordes redondeados en el bloque del precio */
+    display: inline-block; /* Hace que el bloque del precio no ocupe el ancho completo */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transición suave para el hover */
+    text-align: center; /* Centra el texto dentro del bloque */
+    margin-top: 10px; /* Espaciado superior */
 }
 
 .product-item p:hover {
     background-color: #BFD8D2; /* Cambia el color de fondo al pasar el mouse */
-    transform: scale(1.1);/* Aumenta el tamaño del bloque de precio */
-    user-select: none; /* Evitar la selección del texto */
+    transform: scale(1.1); /* Aumenta el tamaño del bloque de precio al hacer hover */
+    user-select: none; /* Evita que el texto del precio sea seleccionado */
 }
 
 /* Animación al pasar el mouse por encima del precio */
 .product-price:hover {
-    background-color: #E1E2E6; /* Cambia el color de fondo */
-    transform: scale(1.1); /* Aumenta el tamaño del bloque ligeramente */
-    color: #000000;
+    background-color: #E1E2E6; /* Cambia el color de fondo del precio al hacer hover */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del precio */
+    color: #000000; /* Cambia el color del texto */
 }
 
 /* Estilo de las imágenes */
 img {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Bordes redondeados para todas las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra alrededor de las imágenes */
 }

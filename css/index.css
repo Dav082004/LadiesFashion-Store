@@ -1,54 +1,20 @@
 body {
-    font-family: 'Arial', sans-serif;
+    /* Color del texto principal y fondo de la página */
     color: #333;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
 }
 
-.header {
-    background-color: #bababa;
-    padding: 20px;
-    text-align: center;
-}
-
-.header-title {
-    font-size: 2.5 rem;
-    color: #262626;
-    animation: fadeIn 1s ease-out;
-}
-
-.header-nav .nav-list {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0;
-}
-
-.nav-item {
-    margin: 0 15px
-}
-
-.nav-link {
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-    color: #323337;
-    transform: scale(1.1);
-}
-
 .ropa {
-
+    /* Fondo y espaciado de la sección de ropa */
     background-color: #E1E2E6;
     padding: 50px 0;
     text-align: center;
 }
 
 .ropa-content {
+    /* Centrado de contenido en la sección de ropa */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,18 +22,21 @@ body {
 }
 
 .ropa-content h2 {
+    /* Estilos para el título de la sección de ropa */
     font-size: 3rem;
     color: #333;
     margin-bottom: 20px;
 }
 
 .container {
-    max-width: 12;
+    /* Ancho máximo para el contenedor */
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 /* Flexbox para los detalles dentro de cada producto */
 .ropa-1 {
+    /* Estilo para cada tarjeta de producto */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,12 +48,14 @@ body {
 }
 
 .ropa-1:hover {
+    /* Efecto hover para la tarjeta de producto */
     transform: translateY(-10px);
     box-shadow: 0 0px 12px rgba(0, 0, 0, 0.2);
     background-color: #deedff;
 }
 
 .ropa-1 img {
+    /* Imagen de cada producto */
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -92,13 +63,14 @@ body {
 }
 
 .ropa-1 h3 {
+    /* Estilos para el título del producto */
     font-size: 1.5rem;
     color: #333;
     margin-bottom: 10px;
 }
 
-
 .btn-1 {
+    /* Estilo de los botones de la sección de ropa */
     display: inline-block;
     padding: 11px 35px;
     background-color: #f3f3f3;
@@ -109,6 +81,7 @@ body {
 }
 
 .btn-1:hover {
+    /* Efecto hover para los botones */
     background-color: #3190d4;
     color: white;
     font-weight: bold;
@@ -117,18 +90,20 @@ body {
 
 .general-1,
 .general-2 {
+    /* Estilo para las secciones generales 1 y 2 */
     flex-basis: 50%;
     margin: 20px;
 }
 
 .general-1 p,
 .general-2 p {
+    /* Estilos para los párrafos dentro de las secciones generales */
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 20px;
 }
 
-/* Style the mission and vision headings */
+/* Estilo para los encabezados de misión y visión */
 .h2-mision,
 .h2-vision {
     font-weight: bold;
@@ -137,6 +112,7 @@ body {
 }
 
 .general {
+    /* Flexbox para la sección general */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -144,6 +120,7 @@ body {
 }
 
 .general-1 {
+    /* Estilos específicos para la sección general 1 */
     background-color: #f7f7f7;
     border: 1px solid #ddd;
     padding: 20px;
@@ -152,6 +129,7 @@ body {
 }
 
 .general-2 {
+    /* Estilos específicos para la sección general 2 */
     background-color: #fff;
     border: 1px solid #ccc;
     padding: 20px;
@@ -160,21 +138,25 @@ body {
 }
 
 .general-container {
+    /* Contenedor principal de las secciones generales */
     display: flex;
     justify-content: space-around;
 }
 
 .general-side {
+    /* Estilo para los lados de las secciones generales */
     flex-basis: 45%;
     margin: 20px;
 }
 
 .general-side:hover {
+    /* Efecto hover para los lados de las secciones generales */
     background-color: #deedff;
     transform: scale(1.05);
 }
 
 .ropa-group {
+    /* Grid para la agrupación de productos */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     /* Distribuye en columnas responsivas */
@@ -183,7 +165,7 @@ body {
     margin-bottom: 50px;
 }
 
-/*Foter */
+/* Estilos para el pie de página */
 .footer {
     display: flex;
     justify-content: space-around;
@@ -193,16 +175,19 @@ body {
 }
 
 .footer-section {
+    /* Efecto de transición en el pie de página */
     transition: color 0.3s ease;
 }
 
 .footer-section:hover {
+    /* Efecto hover para las secciones del pie de página */
     color: #c6ddfa;
     /* Cambia el color del texto */
     transform: scale(1.05);
 }
 
 @keyframes fadeIn {
+    /* Animación para desvanecer de abajo hacia arriba */
     from {
         opacity: 0;
         transform: translateY(20px);
@@ -210,11 +195,12 @@ body {
 
     to {
         opacity: 1;
-        transform: translateY(0)
+        transform: translateY(0);
     }
 }
 
 @keyframes slideIn {
+    /* Animación para deslizarse horizontalmente */
     from {
         opacity: 0;
         transform: translateX(0);
@@ -226,7 +212,7 @@ body {
     }
 }
 
-/* Responsividad */
+/* Responsividad para pantallas pequeñas */
 @media (max-width: 768px) {
     .ropa-group {
         grid-template-columns: 1fr;
@@ -239,6 +225,7 @@ body {
 }
 
 .txt-p {
+    /* Estilos para texto con padding */
     font-size: 16px;
     color: #414247;
     padding: 0 250px;

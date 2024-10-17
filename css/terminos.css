@@ -3,125 +3,124 @@
 /* Cuadro de Términos y Condiciones */
 .terms-box {
     background-color: #f0f0f0; /* Color de fondo del cuadro */
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
+    padding: 25px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor */
+    margin-bottom: 40px; /* Espacio inferior para separar de otros elementos */
 }
 
 .terms-box p {
-    font-size: 16px;
-    line-height: 1.8;
-    color: #333;
-    margin-bottom: 15px;
+    font-size: 16px; /* Tamaño de fuente para los párrafos */
+    line-height: 1.8; /* Altura de línea para mejor legibilidad */
+    color: #333; /* Color del texto */
+    margin-bottom: 15px; /* Espaciado inferior entre párrafos */
 }
 
 .terms-box h3 {
-    color: #1bbeb4;
-    margin-top: 25px;
-    margin-bottom: 10px;
+    color: #1bbeb4; /* Color del título (turquesa) */
+    margin-top: 25px; /* Espacio superior antes del título */
+    margin-bottom: 10px; /* Espacio inferior después del título */
 }
 
 /* Sección del Gráfico */
 .grafico-seccion {
-    padding: 20px;
-    background-color: #f0f0f0; /* Color de fondo del cuadro del gráfico */
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
-
+    padding: 20px; /* Espaciado interno */
+    background-color: #f0f0f0; /* Fondo del cuadro del gráfico */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 40px; /* Espacio inferior */
 }
 
 .grafico-seccion h3 {
-    color: #333;
-    margin-bottom: 40px;
+    color: #333; /* Color del texto del título */
+    margin-bottom: 40px; /* Espacio inferior antes del gráfico */
 }
 
 /* Cuadro del Gráfico */
 .grafico-box {
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto 20px auto;
-    padding: 15px;
+    width: 100%; /* Ocupa el 100% del contenedor */
+    max-width: 700px; /* Ancho máximo del cuadro */
+    margin: 0 auto 20px auto; /* Centrado horizontal y espacio inferior */
+    padding: 15px; /* Espaciado interno */
     background-color: #ffffff; /* Fondo blanco para el gráfico */
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 /* Estilos para el gráfico SVG */
 .grafico-box svg {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Ancho completo para adaptarse al contenedor */
+    height: auto; /* Altura automática */
 }
 
 /* Barras del gráfico */
 .grafico-box .bar {
-    fill: #0c21e0;
-    transition: fill 0.3s ease, transform 0.3s ease;
-    cursor: pointer;
+    fill: #0c21e0; /* Color de las barras (azul) */
+    transition: fill 0.3s ease, transform 0.3s ease; /* Transición suave en color y tamaño */
+    cursor: pointer; /* Cambia el cursor a "pointer" al pasar el mouse */
 }
 
 .grafico-box .bar:hover {
-    fill: #1bbeb4;
-    transform: scaleY(1.05);
+    fill: #1bbeb4; /* Cambia el color de las barras al pasar el mouse */
+    transform: scaleY(1.05); /* Aumenta la altura de las barras al hacer hover */
 }
 
 /* Etiquetas de las barras */
 .grafico-box .bar-label {
-    font-size: 5px;
-    text-anchor: middle;
-    fill: #333;
-    font-family: 'Arial', sans-serif;
+    font-size: 5px; /* Tamaño de fuente pequeño para las etiquetas de las barras */
+    text-anchor: middle; /* Alinea el texto en el centro de las barras */
+    fill: #333; /* Color del texto de las etiquetas */
+    font-family: 'Arial', sans-serif; /* Fuente de las etiquetas */
 }
 
 /* Responsividad para pantallas pequeñas */
 @media (max-width: 768px) {
     .terms-box, .grafico-seccion {
-        padding: 15px;
+        padding: 15px; /* Reduce el padding en pantallas pequeñas */
     }
 
     .terms-box p {
-        font-size: 14px;
-        line-height: 1.6;
+        font-size: 14px; /* Reduce el tamaño de la fuente */
+        line-height: 1.6; /* Ajusta la altura de línea */
     }
 
     .grafico-seccion h3 {
-        font-size: 18px;
+        font-size: 18px; /* Reduce el tamaño del título en pantallas pequeñas */
     }
 
     .grafico-box .bar-label {
-        font-size: 3px;
+        font-size: 3px; /* Reduce el tamaño de las etiquetas de las barras */
     }
 }
 
 @media (max-width: 480px) {
     .header-title {
-        font-size: 24px;
+        font-size: 24px; /* Ajusta el tamaño del título principal */
     }
 
     .nav-list {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Coloca los elementos del menú en una columna */
+        align-items: center; /* Alinea el menú al centro */
     }
 
     .nav-item {
-        margin: 10px 0;
+        margin: 10px 0; /* Añade margen entre los elementos del menú */
     }
 
     .grafico-box {
-        max-width: 100%;
-        padding: 10px;
+        max-width: 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
+        padding: 10px; /* Reduce el padding interno */
     }
 
     .terms-box {
-        padding: 20px;
+        padding: 20px; /* Reduce el padding en el cuadro de términos */
     }
 
     .grafico-seccion h3 {
-        font-size: 16px;
+        font-size: 16px; /* Reduce aún más el tamaño del título */
     }
 
     .grafico-box .bar-label {
-        font-size: 1px;
+        font-size: 1px; /* Reduce al mínimo el tamaño de las etiquetas de las barras */
     }
 }
