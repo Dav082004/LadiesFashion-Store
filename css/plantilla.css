@@ -193,3 +193,18 @@ main{
     line-height: 22px; /* Altura de línea */
     margin-top: 25px; /* Margen superior de 25px */
 }
+
+#text-description{
+    font-size: 13px; /* Tamaño de fuente de 13px */
+    color: #252525; /* Texto negro */
+    line-height: 22px; /* Altura de línea */
+    margin-top: 25px; /* Margen superior de 25px */
+}
+
+/* Ajustar imágenes manteniendo su proporción */
+#product-image {
+    max-width: 800px; /* Ancho máximo */
+    max-height: 600px; /* Alto máximo */
+    width: 100%; /* Para asegurarte de que la imagen no se estire más allá del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+}

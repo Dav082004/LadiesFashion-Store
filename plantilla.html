@@ -11,7 +11,7 @@
     
     <!-- Enlaces a las hojas de estilo globales y específicas -->
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/descrip_pro.css">
+    <link rel="stylesheet" href="css/plantilla.css">
     
     <!-- Enlace a la librería de iconos Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -22,11 +22,12 @@
     <!-- Título de la pestaña -->
     <title>Document</title>
 </head>
+
 <body>
     <div class="wrapper">
         <!-- Encabezado de la página -->
         <header class="header">
-            <!-- Título del sitio con enlace a la página de inicio -->
+            <!-- Título del sitio con enlace a la página de inicio --> 
             <h1 class="header-title"><a href="/">Ladies Fashion</a></h1>
             
             <!-- Menú de navegación -->
@@ -39,26 +40,21 @@
             </nav>
         </header>
     </div>
-
     <main>
         <!-- Contenedor principal del producto -->
-        <div class="product-container">  
-            <!-- Nombre del producto -->
-            <div class="name-product">
-                Legging Deportivo Running
-            </div>  
-            
-            <!-- Imagen del producto -->
+        <div class="product-container">
+            <div id="product-name" class="name-product">
+                <!-- Nombre del producto será dinámico -->
+            </div>
             <div class="container-img">
-                <img src="https://www.atmosmovement.com/dw/image/v2/BHFM_PRD/on/demandware.static/-/Sites-storefront_catalog_atmos/default/dwe7a96ee5/images/hi-res/Lookbok_Renombradas/Leggings-Para-Mujer-31230001-10_1.jpg?sw=700&sh=840" alt="Legging Deportivo Negro"/>
+                <img id="product-image" src="" alt="" />
             </div>
         </div>
-
         <!-- Información del producto -->
         <div class="container-info-product">
             <!-- Precio del producto -->
-            <div class="container-price">
-                <span><b>S/109.99</b></span>
+            <div id="product-price" class="container-price">
+                <!-- Precio del producto será dinámico -->
             </div>
             
             <!-- Opciones de color y talla del producto -->
@@ -104,8 +100,8 @@
                     />
                     <div class="btn-increment-decrement">
                         <!-- Botones de incremento/decremento de cantidad -->
-                        <i class="fa-solid fa-chevron-up"></i>
-                        <i class="fa-solid fa-chevron-down"></i>
+                        <i class="fa-solid fa-chevron-up" id="increment"></i>
+                        <i class="fa-solid fa-chevron-down" id="decrement"></i>
                     </div>
                 </div>
                 <!-- Botón para añadir el producto al carrito -->
@@ -122,7 +118,7 @@
                     <i class="fa-solid fa-chevron-down"></i>
                 </div>
                 <div class="text-description">
-                    <p>Lorem</p>
+                    <p id="text-description">Lorem</p>
                 </div>
             </div>
 
@@ -132,7 +128,7 @@
                     <h4>Información adicional</h4>
                     <i class="fa-solid fa-chevron-down"></i>
                 </div>
-                <div class="text-additional-information">
+                <div class="text-additional-information hidden">
                     <p>--------------------</p>
                 </div>
             </div>
@@ -168,5 +164,7 @@
         </div>
     </footer>
     </div>
+    <script src="js/plantilla.js"></script>
+    <script src="js/productos.js"></script>
 </body>
 </html>
