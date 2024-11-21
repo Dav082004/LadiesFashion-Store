@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Configuración de caracteres y meta etiquetas para compatibilidad y responsividad -->
     <meta charset="UTF-8">
@@ -12,8 +13,11 @@
     <!-- Estilos globales y específicos de la página -->
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/cronometro.css">
     <!-- Importación de fuentes de Google -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -35,15 +39,39 @@
         </header>
     </div>
 
+    <!-- Sección del cronometro -->
+    <div class="contene">
+        <h1 class="titulo">🎄 Cuenta Regresiva Navideña 🎅</h1>
+        <ul class="conteni">
+            <li class="cartel">
+                <div class="num" id="dia">00</div>
+                <h3>Días</h3>
+            </li>
+            <li class="cartel">
+                <div class="num" id="hora">00</div>
+                <h3>Horas</h3>
+            </li>
+            <li class="cartel">
+                <div class="num" id="min">00</div>
+                <h3>Min</h3>
+            </li>
+            <li class="cartel">
+                <div class="num" id="seg">00</div>
+                <h3>Seg</h3>
+            </li>
+        </ul>
+    </div>
+    <script src="js/cronometro.js"></script>
+
     <!-- Sección de productos en tendencia -->
-    <section class="ropa">       
+    <section class="ropa">
         <div class="ropa-content container">
             <!-- Título de la sección -->
             <h2>En Tendencia 2024</h2>
             <!-- Descripción y contenido textual sobre las nuevas tendencias -->
             <p class="txt-p">
-                <strong>👗 Nuevas Tendencias:</strong> 
-                Siempre al día con las últimas tendencias para que encuentres el look perfecto. 
+                <strong>👗 Nuevas Tendencias:</strong>
+                Siempre al día con las últimas tendencias para que encuentres el look perfecto.
             </p>
             <!-- Grupo de productos en tendencia -->
             <div class="ropa-group">
@@ -77,15 +105,18 @@
             <div class="general-1 general-side">
                 <h2 class="h2-mision">Misión</h2>
                 <p>
-                    "Proporcionar ropa moderna, cómoda y accesible que refleje las últimas tendencias, promoviendo inclusión y sostenibilidad en cada colección. 
-                    Queremos empoderar a las mujeres con moda, asegurando una experiencia de compra en línea fácil, segura y adaptada a sus diversas necesidades y estilos."
+                    "Proporcionar ropa moderna, cómoda y accesible que refleje las últimas tendencias, promoviendo
+                    inclusión y sostenibilidad en cada colección.
+                    Queremos empoderar a las mujeres con moda, asegurando una experiencia de compra en línea fácil,
+                    segura y adaptada a sus diversas necesidades y estilos."
                 </p>
             </div>
             <!-- Descripción de la visión de la empresa -->
             <div class="general-2 general-side">
                 <h2 class="h2-vision">Visión</h2>
                 <p>
-                    "Convertirnos en la tienda líder en venta de ropa para mujeres reconocida a nivel nacional, por ofrecer productos de calidad, con diseños únicos y sostenibles, 
+                    "Convertirnos en la tienda líder en venta de ropa para mujeres reconocida a nivel nacional, por
+                    ofrecer productos de calidad, con diseños únicos y sostenibles,
                     brindando una experiencia de compra excepcional tanto en línea como en tiendas físicas."
                 </p>
             </div>
@@ -98,7 +129,8 @@
             <!-- Información de contacto de la tienda -->
             <h3 class="footer-title">Contacto</h3>
             <ul class="footer-list">
-                <li class="footer-item"><a class="footer-link" href="mailto:contacto@divasfashion.com">Email: contacto@divasfashion.com</a></li>
+                <li class="footer-item"><a class="footer-link" href="mailto:contacto@divasfashion.com">Email:
+                        contacto@divasfashion.com</a></li>
                 <li class="footer-item"><a class="footer-link" href="tel:+123456789">Teléfono: 992854825</a></li>
             </ul>
         </div>
@@ -107,9 +139,12 @@
         <div class="footer-section">
             <h3 class="footer-title">Síguenos</h3>
             <ul class="footer-list">
-                <li class="footer-item"><a class="footer-link" href="https://www.facebook.com/divasfashion" target="_blank">Facebook</a></li>
-                <li class="footer-item"><a class="footer-link" href="https://www.instagram.com/divasfashion" target="_blank">Instagram</a></li>
-                <li class="footer-item"><a class="footer-link" href="https://www.twitter.com/divasfashion" target="_blank">Twitter</a></li>
+                <li class="footer-item"><a class="footer-link" href="https://www.facebook.com/divasfashion"
+                        target="_blank">Facebook</a></li>
+                <li class="footer-item"><a class="footer-link" href="https://www.instagram.com/divasfashion"
+                        target="_blank">Instagram</a></li>
+                <li class="footer-item"><a class="footer-link" href="https://www.twitter.com/divasfashion"
+                        target="_blank">Twitter</a></li>
             </ul>
         </div>
 
@@ -119,10 +154,12 @@
             <ul class="footer-list">
                 <li class="footer-item"><a class="footer-link" href="terminos.html">Términos y Condiciones</a></li>
                 <li class="footer-item"><a class="footer-link" href="privacidad.html">Política de Privacidad</a></li>
-                <li class="footer-item"><a class="footer-link" href="devoluciones.html">Política de Devoluciones</a></li>
+                <li class="footer-item"><a class="footer-link" href="devoluciones.html">Política de Devoluciones</a>
+                </li>
             </ul>
         </div>
     </footer>
     </div>
 </body>
+
 </html>
