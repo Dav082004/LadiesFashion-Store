@@ -24,10 +24,40 @@
         </header>
     
         <main class="main">
+            <!-- Encabezado con título y carrito -->
+            <div class="header-container">
+                <h1 class="h1-productos">Nuestros últimos productos</h1>
+                <div class="container-icon">
+                    <div class="container-cart-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                        </svg>
+                        <div class="count-products">
+                            <span id="contador-productos">0</span>
+                        </div>
+                    </div>
+                    <div class="container-cart-products hidden-cart">
+                        <div class="row-product">
+                            <div class="cart-product">
+                                <div class="info-cart-product">
+                                    <span class="cantidad-producto-carrito">1</span>
+                                    <p class="titulo-producto-carrito">Legging Deportivo Running</p>
+                                    <span class="precio-producto-carrito">S/109.99</span>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                  </svg>
+                            </div>
+                        </div>
+                        <div class="cart-total">
+                            <h2>Total:</h2>
+                            <span class="total-pagar">S/1000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- Tabla de productos separados por tipo -->
-            <h1 class="h1-productos">Nuestros últimos productos</h1>
-            <table class="product-table" border="1" cellpadding="10" cellspacing="0">
-                
+            <table class="product-table" border="1" cellpadding="10" cellspacing="0"> 
                 <!-- Sección de Leggings Deportivos -->
                 <thead class="table-header">
                     <tr>
@@ -40,11 +70,13 @@
                             <h3 class="product-name">Legging Deportivo Running</h3>
                             <img src="https://www.atmosmovement.com/dw/image/v2/BHFM_PRD/on/demandware.static/-/Sites-storefront_catalog_atmos/default/dwe7a96ee5/images/hi-res/Lookbok_Renombradas/Leggings-Para-Mujer-31230001-10_1.jpg?sw=700&sh=840" alt="Legging Deportivo Negro" width="200" class="product-image">
                             <p class="product-price" onclick="window.location.href='plantilla.html?id=legging_running'">S/109.99</p>
+                            <button class = "btn-add-cart">Añadir al carrito</button>
                         </td>
                         <td class="product-item">
                             <h3 class="product-name">Legging Deportivo Gym</h3>
                             <img src="https://i.pinimg.com/736x/ea/26/41/ea26411a0de9cf88931aa5f92eca716a.jpg" alt="Legging Deportivo Gym" width="200" class="product-image">
                             <p class="product-price" onclick="window.location.href='plantilla.html?id=legging_gym'">S/119.99</p>
+                            <button class = "btn-add-cart">Añadir al carrito</button>
                         </td>
                     </tr>
                 </tbody>
@@ -61,11 +93,13 @@
                             <h3 class="product-name">Vestido Casual Primavera</h3>
                             <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/a7d50c99f6b89dc6a49d8881f3c425b3.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp" alt="Vestido Casual Floral" width="200" class="product-image">
                             <p class="product-price" onclick="window.location.href='plantilla.html?id=vestido_primavera'">S/99.99</p>
+                            <button class = "btn-add-cart">Añadir al carrito</button>
                         </td>
                         <td class="product-item">
                             <h3 class="product-name">Vestido Casual Verano</h3>
                             <img src="https://www.bellayvale.pe/wp-content/uploads/2022/07/07042022-DSC01463-Editar.jpg" alt="Vestido Rojo" width="200" class="product-image">
                             <p class="product-price" onclick="window.location.href='plantilla.html?id=vestido_verano'">S/149.99</p>
+                            <button class = "btn-add-cart">Añadir al carrito</button>
                         </td>
                     </tr>
                 </tbody>
@@ -82,11 +116,13 @@
                             <h3 class="product-name">Polo Deportivo Oversize</h3>
                             <img src="https://www.alphafit.pe/cdn/shop/files/polo-oversize-mujer-ropa-deportiva-mujer-alphafit-peru-1-33267849068757.jpg?v=1697668011" alt="Polo Deportivo Negro" width="200" class="product-image">
                             <p class="product-price" onclick="window.location.href='plantilla.html?id=polo_oversize'">S/89.99</p>
+                            <button class = "btn-add-cart">Añadir al carrito</button>
                         </td>
                         <td class="product-item">
                             <h3 class="product-name">Polo Deportivo Crop</h3>
                             <img src="https://plazavea.vteximg.com.br/arquivos/ids/28285804-300-300/imageUrl_1.jpg?v=638349681978400000" alt="Polo Deportivo Rosa" width="200" class="product-image">
                             <p class="product-price" onclick="window.location.href='plantilla.html?id=polo_crop'">S/99.99</p>
+                            <button class = "btn-add-cart">Añadir al carrito</button>
                         </td>
                     </tr>
                 </tbody>
@@ -103,11 +139,13 @@
                             <h3 class="product-name">Conjunto Relaxed</h3>
                             <img src="https://d3fvqmu2193zmz.cloudfront.net/ProductCatalog/Workspace.CWDQQL6GUIJMS/ProductCatalog.C3EYU7VPI5IIK/1500x1500/C3EZ2XTZUYNQU.jpg" alt="Conjunto Gris" width="200" class="product-image">
                             <p class="product-price" onclick="window.location.href='plantilla.html?id=conjunto_relaxed'">S/229.99</p>
+                            <button class = "btn-add-cart">Añadir al carrito</button>
                         </td>
                         <td class="product-item">
                             <h3 class="product-name">Conjunto Regular</h3>
                             <img src="https://http2.mlstatic.com/D_NQ_NP_870364-MLA69508203241_052023-O.webp" alt="Conjunto Verde" width="200" class="product-image">
                             <p class="product-price" onclick="window.location.href='plantilla.html?id=conjunto_regular'">S/249.99</p>
+                            <button class = "btn-add-cart">Añadir al carrito</button>
                         </td>
                     </tr>
                 </tbody>
@@ -142,5 +180,6 @@
             </div>
         </footer>
     </div>
+    <script src="js/carrito.js"></script>
 </body>
 </html>

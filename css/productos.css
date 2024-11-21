@@ -1,91 +1,262 @@
 /* Tabla de productos */
 .product-table {
-    margin: 20px auto; /* Centra la tabla horizontalmente */
-    width: 80%; /* La tabla ocupa el 80% del ancho de la página */
-    border-collapse: collapse; /* Elimina los espacios entre las celdas */
+    margin: 0 auto;         /* Centra la tabla horizontalmente */
+    width: 100%;            /* La tabla ocupa el 100% del ancho disponible */
+    border-collapse: collapse; /* Elimina los espacios entre las celdas de la tabla */
 }
 
+/* Encabezado de la tabla */
 .table-header {
-    background-color: #BFD8D2; /* Color de fondo para el encabezado de la tabla, rosado fuerte pastel */
+    background-color: #BFD8D2; /* Color de fondo rosado pastel para el encabezado */
+    font-weight: bold;         /* Aplica negrita al texto del encabezado */
 }
 
+/* Título de categoría de productos */
 .category-title {
-    color: black; /* Color del texto para los títulos de categoría */
-    font-size: 1.5rem; /* Tamaño de fuente para los títulos */
-    padding: 5px; /* Espacio interno para los títulos */
+    color: black;              /* Color del texto del título */
+    font-size: 1.5rem;         /* Tamaño de la fuente para el título */
+    padding: 5px;              /* Espaciado interno alrededor del título */
 }
 
+/* Categoría de producto */
 .product-category {
-    border-top: 2px solid #f5f5f5; /* Borde superior para separar las categorías de productos */
+    border-top: 2px solid #f5f5f5; /* Borde superior para separar categorías de productos */
+    text-align: center;            /* Centra el texto dentro de la categoría */
 }
 
+/* Fila de producto */
 .product-row {
-    text-align: center; /* Centra el contenido de las filas de productos */
+    text-align: center; /* Centra el contenido dentro de cada fila de productos */
 }
 
+/* Estilo para el título principal de productos */
 .h1-productos {
-    text-align: center; /* Centra el encabezado */
-    font-size: 30px; /* Ajusta el tamaño del encabezado */
-    font-weight: bold; /* Aplica negrita */
-    padding: 10px 0; /* Espaciado alrededor del encabezado */
+    text-align: center; /* Centra el título en la página */
+    font-size: 30px;    /* Tamaño grande para el título */
+    font-weight: bold;  /* Aplica negrita al título */
+    padding: 10px 0;    /* Espaciado superior e inferior para el título */
+    margin: 0;          /* Elimina cualquier margen predeterminado */
 }
 
+/* Estilo de cada item de producto */
 .product-item {
-    background-color: #E9F1FA; /* Fondo pastel suave para cada producto */
-    padding: 15px; /* Espaciado interno en el contenedor del producto */
-    border-radius: 15px; /* Bordes redondeados */
-    text-align: center; /* Centra el contenido del producto */
-    transition: transform 0.3s ease; /* Transición suave al aplicar hover */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra alrededor del producto */
-    width: 48%; /* Cada producto ocupa el 48% del ancho disponible */
-    max-width: 300px; /* Ancho máximo para limitar el tamaño */
-    margin: auto; /* Centra el producto dentro del contenedor */
+    background-color: #E9F1FA;                /* Fondo pastel suave para cada producto */
+    padding: 10px;                              /* Espaciado interno en el contenedor del producto */
+    border-radius: 15px;                        /* Bordes redondeados para el producto */
+    text-align: center;                         /* Centra el contenido dentro del item */
+    transition: transform 0.3s ease;            /* Transición suave para el efecto hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Sombra alrededor del producto */
+    width: 48%;                                 /* El producto ocupa el 48% del ancho disponible */
+    max-width: 300px;                           /* Limita el tamaño máximo del producto */
+    margin: auto;                               /* Centra el producto dentro del contenedor */
 }
 
+/* Efecto de hover en el item de producto */
 .product-item:hover {
     transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el mouse */
 }
 
+/* Estilo de la imagen dentro de cada producto */
 .product-item img {
-    max-width: 100%; /* Asegura que la imagen no exceda el tamaño del contenedor */
-    border-radius: 10px; /* Bordes redondeados para las imágenes */
+    max-width: 100%;     /* La imagen no excede el tamaño del contenedor */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
 }
 
+/* Título de cada producto */
 .product-item h3 {
-    font-size: 1.5rem; /* Tamaño de fuente para el título del producto */
-    color: #333; /* Color del texto del título */
-    margin-bottom: 5px; /* Espaciado debajo del título */
-    text-align: center; /* Centra el texto del título */
-    margin-top: 0px; /* Elimina el margen superior */
+    font-size: 1.5rem;    /* Tamaño de fuente más grande para el título del producto */
+    color: #333;          /* Color oscuro para el texto del título */
+    margin-bottom: 5px;   /* Espaciado inferior debajo del título */
+    text-align: center;   /* Centra el texto dentro del item */
+    margin-top: 0px;      /* Elimina el margen superior */
 }
 
+/* Estilo del precio dentro de cada producto */
 .product-item p {
-    background-color: #000000; /* Fondo negro para el bloque de precio */
-    color: #fff; /* Texto blanco para el precio */
-    font-size: 1.2rem; /* Tamaño de fuente para el precio */
-    padding: 10px 15px; /* Espaciado interno para el bloque del precio */
-    border-radius: 10px; /* Bordes redondeados en el bloque del precio */
-    display: inline-block; /* Hace que el bloque del precio no ocupe el ancho completo */
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Transición suave para el hover */
-    text-align: center; /* Centra el texto dentro del bloque */
-    margin-top: 10px; /* Espaciado superior */
+    background-color: #000000;                                 /* Fondo negro para el precio */
+    color: #fff;                                               /* Texto blanco para el precio */
+    font-size: 1.2rem;                                          /* Tamaño de fuente para el precio */
+    padding: 10px 15px;                                         /* Espaciado interno para el bloque del precio */
+    border-radius: 10px;                                        /* Bordes redondeados en el bloque del precio */
+    display: inline-block;                                      /* Hace que el bloque del precio no ocupe el ancho completo */
+    transition: transform 0.3s ease, background-color 0.3s ease;  /* Transición suave para hover */
+    text-align: center;                                         /* Centra el texto dentro del bloque */
+    margin-top: 10px;                                           /* Espaciado superior */
 }
 
+/* Efecto hover en el precio */
 .product-item p:hover {
-    background-color: #BFD8D2; /* Cambia el color de fondo al pasar el mouse */
-    transform: scale(1.1); /* Aumenta el tamaño del bloque de precio al hacer hover */
-    user-select: none; /* Evita que el texto del precio sea seleccionado */
+    background-color: #BFD8D2; /* Cambia el color de fondo cuando se pasa el mouse */
+    transform: scale(1.1);      /* Aumenta ligeramente el tamaño del bloque de precio */
+    user-select: none;          /* Impide que el texto del precio sea seleccionado */
 }
 
-/* Animación al pasar el mouse por encima del precio */
+/* Estilo para el precio al pasar el mouse */
 .product-price:hover {
     background-color: #E1E2E6; /* Cambia el color de fondo del precio al hacer hover */
-    transform: scale(1.1); /* Aumenta ligeramente el tamaño del precio */
-    color: #000000; /* Cambia el color del texto */
+    transform: scale(1.1);      /* Aumenta ligeramente el tamaño */
+    color: #000000;             /* Cambia el color del texto */
 }
 
-/* Estilo de las imágenes */
+/* Estilo para todas las imágenes en la página */
 img {
-    border-radius: 10px; /* Bordes redondeados para todas las imágenes */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra alrededor de las imágenes */
+    border-radius: 10px;                        /* Bordes redondeados para todas las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra sutil alrededor de las imágenes */
+}
+
+/* Contenedor principal del encabezado */
+.header-container {
+    display: flex;                     /* Usa flexbox para el diseño del encabezado */
+    justify-content: space-between;    /* Espacia los elementos entre sí */
+    align-items: center;               /* Centra los elementos verticalmente */
+    margin-bottom: 20px;               /* Espaciado inferior para separar el encabezado del resto */
+    padding: 0 10px;                   /* Espaciado horizontal */
+}
+
+/* Contenedor del ícono del carrito */
+.container-icon {
+    cursor: pointer;                  /* Cambia el cursor a mano cuando se pasa sobre el carrito */
+    position: relative;                /* Posiciona el carrito de forma relativa */
+}
+
+/* Estilo del ícono del carrito */
+.icon-cart {
+    width: 40px;        /* Establece el tamaño del ícono del carrito */
+    height: 40px;       /* Establece la altura del ícono */
+    transition: transform 0.3s ease; /* Agrega una transición suave al hacer hover */
+    stroke: #000;       /* Establece el color del trazo (borde) */
+}
+
+/* Efecto hover en el ícono del carrito */
+.icon-cart:hover {
+    transform: scale(1.1);  /* Aumenta ligeramente el tamaño al pasar el mouse */
+    cursor: pointer;       /* Cambia el cursor a mano */
+}
+
+/* Estilo para el botón dentro de cada producto */
+.product-item button {
+    border: none;                /* Elimina el borde del botón */
+    background: none;            /* Elimina el fondo del botón */
+    background-color: #000;      /* Fondo negro para el botón */
+    color: #fff;                 /* Texto blanco en el botón */
+    padding: 15px 10px;          /* Espaciado interno para el botón */
+    cursor: pointer;            /* Cambia el cursor a mano cuando se pasa sobre el botón */
+    font-size: 1.2rem;           /* Tamaño de fuente para el botón */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transiciones suaves al hacer hover */
+    margin-top: 10px;            /* Espaciado superior del botón */
+}
+
+/* Efecto hover en el botón de producto */
+.product-item button:hover {
+    background-color: #BFD8D2; /* Cambia el fondo del botón al hacer hover */
+    transform: scale(1.1);      /* Aumenta ligeramente el tamaño del botón */
+    color: #000000;             /* Cambia el color del texto */
+}
+
+/* Contador de productos en el carrito */
+.count-products {
+    position: absolute;          /* Posiciona el contador de productos de manera absoluta */
+    top: 55%;                    /* Coloca el contador en el centro vertical del ícono */
+    right: 0;                    /* Lo alinea al borde derecho del contenedor */
+    background-color: #000;      /* Fondo negro para el contador */
+    color: #fff;                 /* Texto blanco para el contador */
+    width: 25px;                 /* Ancho del contador */
+    height: 25px;                /* Altura del contador */
+    display: flex;               /* Usa flexbox para alinear el contenido */
+    justify-content: center;     /* Centra el número dentro del contador */
+    align-items: center;         /* Centra el número verticalmente */
+    border-radius: 50%;          /* Hace el contador redondo */
+}
+
+/* Estilo para el número del contador de productos */
+#contador-productos {
+    font-size: 12px;             /* Tamaño de fuente pequeño para el número */
+}
+
+/* Contenedor principal del carrito de productos */
+.container-cart-products {
+    position: fixed;             /* Fija el carrito en la pantalla */
+    top: 80px;                   /* Lo coloca debajo del encabezado */
+    right: 20px;                 /* Lo alinea al borde derecho de la página */
+    z-index: 1000;               /* Asegura que el carrito se muestre encima de otros elementos */
+    background-color: white;     /* Fondo blanco para el carrito */
+    padding: 20px;               /* Espaciado interno */
+    border-radius: 8px;          /* Bordes redondeados en el carrito */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor del carrito */
+    max-height: 80vh;            /* Limita la altura del carrito */
+    overflow-y: auto;            /* Agrega scroll si el contenido excede el tamaño */
+}
+
+/* Estilo para el ícono de cerrar el carrito */
+.icon-close {
+    width: 25px;                 /* Tamaño del ícono de cerrar */
+    height: 25px;                /* Altura del ícono de cerrar */
+}
+
+/* Efecto hover en el ícono de cerrar */
+.icon-close:hover {
+    stroke: red;                 /* Cambia el color del trazo a rojo al hacer hover */
+    cursor: pointer;            /* Cambia el cursor a mano */
+}
+
+/* Estilo de los productos en el carrito */
+.cart-product {
+    display: flex;               /* Usa flexbox para el diseño */
+    align-items: center;         /* Centra los elementos verticalmente */
+    justify-content: space-between; /* Espacia los elementos a los lados */
+    padding: 30px;               /* Espaciado interno para el producto */
+    border-bottom: 1px solid  rgba(0, 0, 0, 0.20); /* Borde inferior para separar los productos */
+}
+
+/* Información del producto en el carrito */
+.info-cart-product {
+    display: flex;               /* Usa flexbox para alinear los elementos */
+    justify-content: space-between; /* Espacia los elementos */
+    flex: 0.8;                    /* Ajusta el tamaño */
+}
+
+/* Título del producto en el carrito */
+.titulo-producto-carrito {
+    margin-left: 10px;            /* Espaciado a la izquierda */
+    font-size: 20px;              /* Tamaño de fuente para el título */
+    flex-grow: 1;                 /* Hace que el título crezca y ocupe el espacio disponible */
+}
+
+/* Precio del producto en el carrito */
+.precio-producto-carrito {
+    font-weight: 700;             /* Aplica negrita al precio */
+    font-size: 20px;              /* Tamaño de fuente para el precio */
+    margin-left: 10px;            /* Espaciado a la izquierda */
+}
+
+/* Cantidad del producto en el carrito */
+.cantidad-producto-carrito {
+    font-weight: 400;             /* Peso de la fuente normal para la cantidad */
+    font-size: 20px;              /* Tamaño de fuente para la cantidad */
+}
+
+/* Total del carrito */
+.cart-total {
+    display: flex;               /* Usa flexbox para alinear los elementos */
+    justify-content: center;      /* Centra los elementos */
+    align-items: center;         /* Centra los elementos verticalmente */
+    padding: 20px 0;              /* Espaciado superior e inferior */
+    gap: 20px;                    /* Espaciado entre los elementos */
+}
+
+/* Estilo para el texto del total */
+.cart-total h2 {
+    font-size: 20px;              /* Tamaño de fuente para el total */
+    font-weight: 700;             /* Aplica negrita al total */
+}
+
+/* Estilo para el monto total a pagar */
+.total-pagar {
+    font-size: 20px;              /* Tamaño de fuente para el monto total */
+    font-weight: 900;             /* Aplica peso de fuente más pesado */
+}
+
+/* Oculta el carrito por defecto */
+.hidden-cart {
+    display: none;                /* Oculta el carrito */
 }

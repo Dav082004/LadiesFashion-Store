@@ -1,45 +1,48 @@
-* {
-    font-family: 'Poppins', sans-serif; /* Aplica la fuente Poppins a todos los elementos */
+* { 
+    font-family: 'Poppins', sans-serif;  /* Aplica la fuente Poppins a todos los elementos */ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Main */
 .main {
-    margin: 0 auto; /* Centra el contenido horizontalmente */
-    max-width: 1200px; /* Define el ancho máximo del contenedor principal */
+    margin: 0 auto;     /* Centra el contenido horizontalmente */
+    max-width: 1200px;  /* Define el ancho máximo del contenedor principal */
 }
 
 .header {
-    background-color: #f3f3f3; /* Color de fondo de la cabecera */
-    padding: 20px; /* Espaciado interno de 20px */
-    display: flex; /* Usamos flexbox para la disposición de los elementos */
-    justify-content: space-between; /* Coloca los elementos con espacio entre ellos */
-    align-items: center; /* Alinea los elementos verticalmente al centro */
-    border-bottom: 2px solid #e0e0e0; /* Borde inferior de 2px en la cabecera */
+    background-color: #f3f3f3;         /* Color de fondo de la cabecera */
+    padding: 0 20px;                       /* Espaciado interno de 20px */
+    display: flex;                       /* Usamos flexbox para la disposición de los elementos */
+    justify-content: space-between;      /* Coloca los elementos con espacio entre ellos */
+    align-items: center;                 /* Alinea los elementos verticalmente al centro */
+    border-bottom: 2px solid #e0e0e0;  /* Borde inferior de 2px en la cabecera */
 }
 
 .header-title {
-    font-size: 28px; /* Tamaño de fuente del título en la cabecera */
+    font-size: 28px;   /* Tamaño de fuente del título en la cabecera */
     font-weight: bold; /* Fuente en negrita */
-    color: #333333; /* Color del texto */
-    margin: 0; /* Elimina el margen por defecto */
+    color: #333333;  /* Color del texto */
+    margin: 0;         /* Elimina el margen por defecto */
 }
 
-.header-title a {
-    text-decoration: none; /* Elimina el subrayado del enlace */
-    color: #333333; /* Color del enlace en el título */
-}
+.header-title a { 
+    text-decoration: none;  /* Elimina el subrayado del enlace */
+    color: #333333;       /* Color del enlace en el título */
+} 
 
 .header-nav {
     margin: 0; /* Elimina el margen por defecto en la navegación */
 }
 
 .nav-list {
-    list-style: none; /* Elimina los puntos de las listas */
-    display: flex; /* Muestra los elementos de la lista en línea usando flexbox */
-    margin: 0; /* Elimina el margen por defecto */
-    padding: 0; /* Elimina el padding por defecto */
-    font-weight: bold; /* Texto en negrita para los elementos del menú */
-    text-decoration: none; /* Elimina la decoración de texto */
+    list-style: none;            /* Elimina los puntos de las listas */
+    display: flex;               /* Muestra los elementos de la lista en línea usando flexbox */
+    margin: 0;                   /* Elimina el margen por defecto */
+    padding: 0;                  /* Elimina el padding por defecto */
+    font-weight: bold;           /* Texto en negrita para los elementos del menú */
+    text-decoration: none;       /* Elimina la decoración de texto */
     transition: color 0.3s ease; /* Transición suave para el cambio de color */
 }
 
@@ -49,43 +52,43 @@
 
 .nav-link {
     text-decoration: none; /* Elimina el subrayado de los enlaces */
-    font-size: 18px; /* Tamaño de fuente de los enlaces */
-    color: #333333; /* Color por defecto de los enlaces */
+    font-size: 18px;       /* Tamaño de fuente de los enlaces */
+    color: #333333;      /* Color por defecto de los enlaces */
 }
 
 .nav-link:hover {
-    color: #1bbeb4; /* Cambia el color al pasar el ratón sobre el enlace */
+    color: #1bbeb4;            /* Cambia el color al pasar el ratón sobre el enlace */
     transition: color 0.3s ease; /* Transición suave en el cambio de color */
 }
 
 .footer {
-    background-color: black; /* Color de fondo negro para el pie de página */
-    padding: 40px; /* Espaciado interno de 40px */
-    color: #f5f5f5; /* Color del texto en el pie de página */
-    display: flex; /* Usamos flexbox para el pie de página */
+    background-color: black;      /* Color de fondo negro para el pie de página */
+    padding: 40px;                  /* Espaciado interno de 40px */
+    color: #f5f5f5;               /* Color del texto en el pie de página */
+    display: flex;                  /* Usamos flexbox para el pie de página */
     justify-content: space-between; /* Distribuye las secciones del pie de página */
-    align-items: flex-start; /* Alinea los elementos al inicio del eje vertical */
-    flex-wrap: wrap; /* Permite que las secciones se envuelvan en pantallas más pequeñas */
-    text-align: center; /* Centra el texto */
-    margin-top: auto; /* Empuja el pie de página hacia el final de la página */
+    align-items: flex-start;        /* Alinea los elementos al inicio del eje vertical */
+    flex-wrap: wrap;                /* Permite que las secciones se envuelvan en pantallas más pequeñas */
+    text-align: center;             /* Centra el texto */
+    margin-top: auto;               /* Empuja el pie de página hacia el final de la página */
 }
 
 .footer-section {
     flex: 1 1 200px; /* Flexbox con tamaño mínimo de 200px y flexible */
-    margin: 10px; /* Margen entre las secciones del pie de página */
+    margin: 10px;    /* Margen entre las secciones del pie de página */
 }
 
 .footer-title {
-    font-size: 20px; /* Tamaño de fuente para los títulos del pie de página */
-    font-weight: bold; /* Texto en negrita */
+    font-size: 20px;     /* Tamaño de fuente para los títulos del pie de página */
+    font-weight: bold;   /* Texto en negrita */
     margin-bottom: 15px; /* Espacio inferior entre el título y los elementos de la lista */
-    color: #ffffff; /* Color blanco para los títulos */
+    color: #ffffff;    /* Color blanco para los títulos */
 }
 
 .footer-list {
     list-style: none; /* Elimina los puntos de las listas */
-    padding: 0; /* Elimina el padding por defecto */
-    margin: 0; /* Elimina el margen por defecto */
+    padding: 0;       /* Elimina el padding por defecto */
+    margin: 0;        /* Elimina el margen por defecto */
 }
 
 .footer-item {
@@ -93,9 +96,9 @@
 }
 
 .footer-link {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    color: #f5f5f5; /* Color por defecto de los enlaces en el pie de página */
-    font-size: 16px; /* Tamaño de fuente de los enlaces */
+    text-decoration: none;       /* Elimina el subrayado de los enlaces */
+    color: #f5f5f5;            /* Color por defecto de los enlaces en el pie de página */
+    font-size: 16px;             /* Tamaño de fuente de los enlaces */
     transition: color 0.3s ease; /* Transición suave para el cambio de color */
 }
 
@@ -106,7 +109,7 @@
 @media (max-width: 768px) {
     .footer {
         flex-direction: column; /* En pantallas pequeñas, cambia la dirección a columna */
-        align-items: center; /* Centra los elementos del pie de página */
+        align-items: center;    /* Centra los elementos del pie de página */
     }
 
     .footer-section {
@@ -116,11 +119,11 @@
 
 html, body {
     height: 100%; /* Hace que la altura de la página sea del 100% */
-    margin: 0; /* Elimina el margen por defecto del body */
+    margin: 0;    /* Elimina el margen por defecto del body */
 }
 
 .wrapper {
-    display: flex; /* Usamos flexbox para el contenedor principal */
+    display: flex;          /* Usamos flexbox para el contenedor principal */
     flex-direction: column; /* Organiza los hijos en columna */
 }
 

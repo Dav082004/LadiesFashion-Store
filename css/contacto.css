@@ -3,10 +3,10 @@
     text-align: center; /* Alinear el texto al centro */
     color: black; /* Color del texto en negro */
     margin-top: 20px; /* Espacio superior de 20px */
-}
+} 
 
 /* Secciones de contacto y mapa */
-.contact-section, .map-section {
+.contact-section, .map-section { 
     font-family: 'Arial', sans-serif; /* Fuente utilizada */
     background-color: #f4f4f9; /* Color de fondo */
     color: #333; /* Color del texto */
@@ -21,9 +21,9 @@
     padding: 30px; /* Espaciado interno de 30px */
     border-radius: 10px; /* Bordes redondeados de 10px */
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
-}
+} 
 
-.contact-input-group {
+.contact-input-group { 
     margin-bottom: 20px; /* Espacio inferior de 20px entre campos */
 }
 
@@ -34,7 +34,7 @@
     margin-bottom: 8px; /* Espacio inferior de 8px */
 }
 
-.contact-input-group input,
+.contact-input-group input, 
 .contact-input-group textarea,
 .contact-input-group select {
     width: 100%; /* Ancho completo del elemento */
@@ -58,24 +58,24 @@
 
 .contact-button:hover {
     background-color: #a82323; /* Color de fondo al hacer hover */
-}
+} 
 
 /* Sección del mapa */
 .map-section {
     text-align: center; /* Alinear el texto al centro */
     max-width: 800px; /* Ancho máximo de la sección */
     margin: 50px auto; /* Espaciado y centrado automático */
-}
+} 
 
 .map-heading {
     font-size: 1.8rem; /* Tamaño de fuente */
     color: #d32f2f; /* Color del texto en rojo */
     margin-bottom: 20px; /* Espacio inferior de 20px */
-}
+} 
 
 .map-container {
     height: 400px; /* Altura del contenedor del mapa */
     width: 100%; /* Ancho completo */
     border-radius: 10px; /* Bordes redondeados de 10px */
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
-}
+} 

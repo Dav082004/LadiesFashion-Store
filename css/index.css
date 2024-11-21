@@ -1,9 +1,10 @@
+ 
 body {
     /* Color del texto principal y fondo de la página */
-    color: #333;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
+    color: #333; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #f5f5f5; 
 }
 
 .ropa {
@@ -15,7 +16,7 @@ body {
 
 .ropa-content {
     /* Centrado de contenido en la sección de ropa */
-    display: flex;
+    display: flex; 
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -37,14 +38,14 @@ body {
 /* Flexbox para los detalles dentro de cada producto */
 .ropa-1 {
     /* Estilo para cada tarjeta de producto */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px; 
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .ropa-1:hover {
@@ -54,7 +55,7 @@ body {
     background-color: #deedff;
 }
 
-.ropa-1 img {
+.ropa-1 img { 
     /* Imagen de cada producto */
     width: 100%;
     height: auto;
@@ -71,9 +72,9 @@ body {
 
 .btn-1 {
     /* Estilo de los botones de la sección de ropa */
-    display: inline-block;
-    padding: 11px 35px;
-    background-color: #f3f3f3;
+    display: inline-block; 
+    padding: 11px 35px; 
+    background-color: #f3f3f3; 
     color: #323337;
     text-transform: uppercase;
     border-radius: 5px;
@@ -83,8 +84,8 @@ body {
 .btn-1:hover {
     /* Efecto hover para los botones */
     background-color: #3190d4;
-    color: white;
-    font-weight: bold;
+    color: white; 
+    font-weight: bold; 
     transform: scale(1.05);
 }
 
@@ -111,7 +112,7 @@ body {
     margin-bottom: 10px;
 }
 
-.general {
+.general { 
     /* Flexbox para la sección general */
     display: flex;
     flex-wrap: wrap;
@@ -121,35 +122,35 @@ body {
 
 .general-1 {
     /* Estilos específicos para la sección general 1 */
-    background-color: #f7f7f7;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+    background-color: #f7f7f7; 
+    border: 1px solid #ddd; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+} 
 
 .general-2 {
     /* Estilos específicos para la sección general 2 */
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 10px;
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    padding: 20px; 
+    border-radius: 10px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.general-container {
+.general-container { 
     /* Contenedor principal de las secciones generales */
     display: flex;
     justify-content: space-around;
-}
+} 
 
 .general-side {
     /* Estilo para los lados de las secciones generales */
-    flex-basis: 45%;
-    margin: 20px;
+    flex-basis: 45%; 
+    margin: 20px; 
 }
 
-.general-side:hover {
+.general-side:hover { 
     /* Efecto hover para los lados de las secciones generales */
     background-color: #deedff;
     transform: scale(1.05);
@@ -160,19 +161,19 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     /* Distribuye en columnas responsivas */
-    grid-gap: 20px;
+    grid-gap: 20px; 
     /* Espacio entre los elementos */
     margin-bottom: 50px;
 }
 
 /* Estilos para el pie de página */
-.footer {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-}
+.footer { 
+    display: flex; 
+    justify-content: space-around; 
+    padding: 20px; 
+    background-color: #333; 
+    color: #fff; 
+} 
 
 .footer-section {
     /* Efecto de transición en el pie de página */
@@ -183,27 +184,27 @@ body {
     /* Efecto hover para las secciones del pie de página */
     color: #c6ddfa;
     /* Cambia el color del texto */
-    transform: scale(1.05);
-}
+    transform: scale(1.05); 
+} 
 
 @keyframes fadeIn {
     /* Animación para desvanecer de abajo hacia arriba */
     from {
         opacity: 0;
         transform: translateY(20px);
-    }
+    } 
 
     to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
 }
 
 @keyframes slideIn {
     /* Animación para deslizarse horizontalmente */
-    from {
+    from { 
         opacity: 0;
-        transform: translateX(0);
+        transform: translateX(0); 
     }
 
     to {
@@ -226,7 +227,7 @@ body {
 
 .txt-p {
     /* Estilos para texto con padding */
-    font-size: 16px;
+    font-size: 16px; 
     color: #414247;
     padding: 0 250px;
     margin-bottom: 35px;
