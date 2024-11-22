@@ -4,7 +4,7 @@ function updateCountdown() {
     const diff = christmas - now;
 
     if (diff <= 0) {
-        document.querySelector('.contenedor').innerHTML = "🎉 ¡Feliz Navidad! 🎉";
+        document.querySelector('.contene').innerHTML = "🎉 ¡Feliz Navidad! 🎉";
         return;
     }
 
