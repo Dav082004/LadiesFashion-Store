@@ -3,6 +3,7 @@
     margin: 0 auto;         /* Centra la tabla horizontalmente */
     width: 100%;            /* La tabla ocupa el 100% del ancho disponible */
     border-collapse: collapse; /* Elimina los espacios entre las celdas de la tabla */
+    margin-bottom: 23px;
 }
 
 /* Encabezado de la tabla */
