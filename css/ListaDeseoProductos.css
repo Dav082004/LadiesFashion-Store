@@ -1,0 +1,90 @@
+/* Ventana emergente oculta */
+#wishlist-modal.hidden {
+    display: none;
+}
+
+/* Ventana emergente de la lista de deseos */
+#wishlist-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 8px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    overflow: hidden; /* Elimina barras de desplazamiento */
+}
+
+#wishlist-modal:not(.hidden) {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Encabezado */
+#wishlist-modal h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Lista de elementos */
+#wishlist-items {
+    list-style: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto; /* Solo permite scroll vertical si es necesario */
+    overflow-x: hidden; /* Elimina scroll horizontal */
+}
+
+#wishlist-items li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#wishlist-items li:hover {
+    background-color: #f9f9f9;
+    transform: scale(1.03);
+}
+
+/* Botón de eliminación */
+#wishlist-items li .remove-item {
+    cursor: pointer;
+    color: red;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#wishlist-items li .remove-item:hover {
+    color: #d43b3b;
+    transform: scale(1.2);
+}
+
+/* Botón cerrar */
+#close-wishlist {
+    background: #f05454;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#close-wishlist:hover {
+    background: #d43b3b;
+    transform: scale(1.05);
+}
+
+/* Animación de zoom en el icono de la lista de deseos */
+#wishlist-icon .icon:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+}
