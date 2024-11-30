@@ -66,21 +66,43 @@
     transform: scale(1.2);
 }
 
-/* Botón cerrar */
-#close-wishlist {
+/* Contenedor de botones (Cerrar y Descargar PDF) */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los botones */
+    gap: 15px; /* Espacio entre los botones */
+    margin-top: 20px;
+    padding: 0 20px; /* Ajusta según el diseño de tu página */
+    align-items: center;  /* Centra los botones verticalmente */
+}
+
+/* Estilo para los botones de cerrar y descargar */
+#close-wishlist,
+#download-pdf {
     background: #f05454;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 10px 20px;  /* Ajusta el tamaño del botón */
     cursor: pointer;
-    width: 100%;
     border-radius: 5px;
     transition: background 0.3s ease, transform 0.3s ease;
+    width: 48%;  /* Asegura que los botones ocupen la mitad del contenedor, sin deformarse */
+    text-align: center;  /* Alinea el texto al centro */
 }
 
+#download-pdf:hover,
 #close-wishlist:hover {
     background: #d43b3b;
     transform: scale(1.05);
+}
+
+/* Botón Cerrar */
+#close-wishlist {
+    background: #f05454;
+}
+
+#download-pdf {
+    background: #f05454;
 }
 
 /* Animación de zoom en el icono de la lista de deseos */

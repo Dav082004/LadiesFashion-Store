@@ -7,7 +7,7 @@
     <title>Productos | Ladies Fashion</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/productos.css">
-    <link rel="stylesheet" href="css/ListaDeseoProductos.css">
+    <link rel="stylesheet" href="css/wishlist.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -23,18 +23,7 @@
                 </ul>
             </nav>
         </header>
-    
         <main class="main">
-
-                    <!-- Contenedor de los iconos -->
-        <div class="icons-container">
-            <!-- Icono de Lista de Deseos -->
-            <div id="wishlist-icon" class="wishlist-icon">
-                <span class="icon">&#10084;</span>
-                <div class="count">0</div>
-            </div>
-       </div>
-
             <!-- Encabezado con título y carrito -->
             <div class="header-container">
                 <h1 class="h1-productos">Nuestros últimos productos</h1>
@@ -43,30 +32,31 @@
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                         </svg>
-                        <div class="count-products">
+                        <div class="count-products">    
                             <span id="contador-productos">0</span>
                         </div>
+                        
                     </div>
+                    
                     <div class="container-cart-products hidden-cart">
                         <div class="row-product">
-                            <div class="cart-product">
-                                <div class="info-cart-product">
-                                    <span class="cantidad-producto-carrito">1</span>
-                                    <p class="titulo-producto-carrito">Legging Deportivo Running</p>
-                                    <span class="precio-producto-carrito">S/109.99</span>
-                                </div>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                                  </svg>
-                            </div>
+                            
                         </div>
                         <div class="cart-total">
                             <h2>Total:</h2>
-                            <span class="total-pagar">S/1000</span>
+                            <span class="total-pagar">S/0.00</span>
                         </div>
                     </div>
                 </div>
+                <div class="container-icon">
+                    <!-- Icono de Lista de Deseos -->
+                    <div id="wishlist-icon" class="wishlist-icon">
+                        <span class="icon">&#10084;</span>
+                        <div class="count">0</div>
+                    </div>
+               </div>
             </div>
+
             <!-- Tabla de productos separados por tipo -->
             <table class="product-table" border="1" cellpadding="10" cellspacing="0"> 
                 <!-- Sección de Leggings Deportivos -->
@@ -176,7 +166,11 @@
         <ul id="wishlist-items">
             <!-- Aquí aparecerán los elementos añadidos -->
         </ul>
-        <button id="close-wishlist">Cerrar</button>
+        <div class="button-container-wishlist">
+            <button id="close-wishlist">Cerrar</button>
+            <!-- Botón para descargar la lista de deseos como PDF -->
+            <button id="download-pdf" class="btn-download">Descargar PDF</button>
+        </div>
     </div>
 
         </main>
@@ -210,6 +204,8 @@
         </footer>
     </div>
     <script src="js/carrito.js"></script>
-    <script src="js/deseos.js"></script>
+    <script src="js/wishlist.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
 </body>
 </html>
