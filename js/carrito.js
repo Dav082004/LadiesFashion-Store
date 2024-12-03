@@ -59,6 +59,12 @@ productsList.addEventListener('click', e => {
             allProducts.push(infoProduct);
         }
 
+        // Mostrar el carrito automáticamente si está oculto
+        const containerCartProducts = document.querySelector('.container-cart-products');
+        if (containerCartProducts.classList.contains('hidden-cart')) {
+            containerCartProducts.classList.remove('hidden-cart');
+        }
+        
         // Llama a la función que actualiza la interfaz del carrito
         updateCartUI();
     }
@@ -95,11 +101,14 @@ function updateCartUI() {
         total += product.price * product.quantity;
         totalProducts += product.quantity;
 
-        // Agrega un evento al ícono de cerrar para eliminar el producto del carrito
+        // Agrega un evento al ícono de cerrar para reducir la cantidad del producto
         const iconClose = container.querySelector('.icon-close');
         iconClose.addEventListener('click', () => {
-            // Elimina el producto de 'allProducts' en el índice correspondiente
-            allProducts.splice(index, 1);
+            if (product.quantity > 1) {
+                product.quantity--; // Reduce la cantidad en 1
+            } else {
+                allProducts.splice(index, 1); // Elimina el producto si la cantidad llega a 0
+            }
             updateCartUI(); // Vuelve a actualizar la interfaz del carrito
         });
     });

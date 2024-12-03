@@ -61,6 +61,11 @@
 .product-item img {
     max-width: 100%;     /* La imagen no excede el tamaño del contenedor */
     border-radius: 10px; /* Bordes redondeados para la imagen */
+    width: 200px; /* Ancho fijo */
+    height: 280px; /* Alto fijo */
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    display: block; /* Asegura que sean elementos de bloque */
+    margin: 0 auto; /* Centra las imágenes horizontalmente */
 }
 
 /* Título de cada producto */
@@ -112,6 +117,7 @@ img {
     align-items: center;               /* Centra los elementos verticalmente */
     margin-bottom: 20px;               /* Espaciado inferior para separar el encabezado del resto */
     padding: 0 10px;                   /* Espaciado horizontal */
+    margin-top: 35px;
 }
 
 /* Contenedor del ícono del carrito */
@@ -140,11 +146,11 @@ img {
     background: none;            /* Elimina el fondo del botón */
     background-color: #000;      /* Fondo negro para el botón */
     color: #fff;                 /* Texto blanco en el botón */
-    padding: 15px 10px;          /* Espaciado interno para el botón */
+    padding: 10px 9px;          /* Espaciado interno para el botón */
     cursor: pointer;            /* Cambia el cursor a mano cuando se pasa sobre el botón */
     font-size: 1.2rem;           /* Tamaño de fuente para el botón */
     transition: transform 0.3s ease, background-color 0.3s ease; /* Transiciones suaves al hacer hover */
-    margin-top: 10px;            /* Espaciado superior del botón */
+    border-radius: 10px;                                        /* Bordes redondeados en el bloque del precio */
 }
 
 /* Efecto hover en el botón de producto */
@@ -153,6 +159,11 @@ img {
     transform: scale(1.1);      /* Aumenta ligeramente el tamaño del botón */
     color: #000000;             /* Cambia el color del texto */
 }
+
+
+
+
+
 
 /* Contador de productos en el carrito */
 .count-products {
@@ -186,6 +197,7 @@ img {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor del carrito */
     max-height: 80vh;            /* Limita la altura del carrito */
     overflow-y: auto;            /* Agrega scroll si el contenido excede el tamaño */
+    
 }
 
 /* Estilo para el ícono de cerrar el carrito */
